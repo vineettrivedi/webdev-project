@@ -8,13 +8,23 @@ import {Routing} from './app.routing';
 import {HttpModule} from '@angular/http';
 import {FormsModule} from '@angular/forms';
 import {TestService} from './services/test.service.client';
+import { TodoComponent } from './todo/todo.component';
+import { TodoListComponent } from './todo-list/todo-list.component';
+import { TodoEditComponent } from './todo-list/todo-edit.component';
+import {TodoService} from './services/todo.service.client';
+import { WebsiteListComponent } from './components/website/website-list/website-list.component';
+import {WebsiteService} from './services/website.service.client';
 
 @NgModule({
   // Declare components here
   declarations: [
     AppComponent,
     HomeComponent,
-    TestComponent
+    TestComponent,
+    TodoComponent,
+    TodoListComponent,
+    TodoEditComponent,
+    WebsiteListComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +33,7 @@ import {TestService} from './services/test.service.client';
     Routing
   ],
   // Client Side services here
-  providers: [ TestService],
+  providers: [ TestService, TodoService, WebsiteService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

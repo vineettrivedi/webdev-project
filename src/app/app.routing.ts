@@ -6,12 +6,16 @@ import {Routes, RouterModule} from '@angular/router';
 import {HomeComponent} from './components/home/home.component';
 import {ModuleWithProviders} from '@angular/core';
 import {TestComponent} from './components/test/test.component';
-
-
+import {TodoComponent} from './todo/todo.component';
+import {TodoListComponent} from './todo-list/todo-list.component';
+import {WebsiteListComponent} from './components/website/website-list/website-list.component';
 
 const APP_ROUTES: Routes = [
   {path: '', component : HomeComponent},
-  {path: 'test', component: TestComponent}
+  {path: 'todo', component : TodoComponent},
+  {path: 'todoList', component : TodoListComponent},
+  {path: 'test', component: TestComponent},
+  {path: 'website', component: WebsiteListComponent}
 ];
 
 // Export the routes as module providers
