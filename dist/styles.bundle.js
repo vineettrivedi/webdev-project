@@ -1,4 +1,4 @@
-webpackJsonp([2],{
+webpackJsonp(["styles"],{
 
 /***/ "../../../../../src/styles.css":
 /***/ (function(module, exports, __webpack_require__) {
@@ -15,8 +15,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../node_modules/css-loader/index.js??ref--9-1!../node_modules/postcss-loader/index.js??postcss!./styles.css", function() {
-			var newContent = require("!!../node_modules/css-loader/index.js??ref--9-1!../node_modules/postcss-loader/index.js??postcss!./styles.css");
+		module.hot.accept("!!../node_modules/css-loader/index.js??ref--8-1!../node_modules/postcss-loader/index.js??postcss!./styles.css", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js??ref--8-1!../node_modules/postcss-loader/index.js??postcss!./styles.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -35,7 +35,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n\n/* You can add global styles to this file, and also import other style files */\n\nbody{\n  padding-top:80px;\n  padding-bottom:60px;\n}\n\n.navbar-default {\n  background-color: #337ab7;\n}\n\n.navbar-default .navbar-brand {\n  color: white;\n}\n\n.navbar-default .navbar-brand:hover,\n.navbar-default .navbar-brand:focus {\n  color: white;\n}\n\n.navbar-default .navbar-link {\n  color: white;\n}\n\na:focus, a:hover {\n  color: #23527c;\n  text-decoration: none;\n}\n\n@media (max-width: 768px){\n  .navbar>.container .navbar-brand,\n  .navbar>.container-fluid .navbar-brand {\n    margin-left: 15px;\n  }\n}\n\n.list-group-item {\n  border: none;\n}\n\n.li-border-true{\n  border: 1px solid #ddd;\n}\n\n.row {\n  margin-right: 0;\n  margin-left: 0;\n}\n\n.wrapper {\n  position: relative;\n}\n\n.wrapper .glyphicon {\n  position: absolute;\n  top: 0;\n  right: 0;\n  color: white;\n}\n\n.widget-element {\n  padding-top: 2px;\n  padding-bottom: 2px;\n}\n\n.widget-configuration {\n  position: absolute;\n  right: 15px;\n  padding-left: 5px;\n  padding-bottom: 5px;\n  border-bottom-left-radius: 5px;\n  background-color: white;\n  opacity: 0.7;\n  z-index: 3;\n}\n\n.yt-container {\n  position:relative;\n  padding-bottom:56.25%;\n  height:0;\n}\n\n.yt-container iframe {\n  position:absolute;\n  /* margin: auto; */\n  top:0;\n  left:0;\n  width:100%;\n  height:100%;\n}\n\n.column-border {\n}\n", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\r\n\r\n/* You can add global styles to this file, and also import other style files */\r\n\r\nbody{\r\n  padding-top:80px;\r\n  padding-bottom:60px;\r\n}\r\n\r\n.navbar-default {\r\n  background-color: #337ab7;\r\n}\r\n\r\n.navbar-default .navbar-brand {\r\n  color: white;\r\n}\r\n\r\n.navbar-default .navbar-brand:hover,\r\n.navbar-default .navbar-brand:focus {\r\n  color: white;\r\n}\r\n\r\n.navbar-default .navbar-link {\r\n  color: white;\r\n}\r\n\r\na:focus, a:hover {\r\n  color: #23527c;\r\n  text-decoration: none;\r\n}\r\n\r\n@media (max-width: 768px){\r\n  .navbar>.container .navbar-brand,\r\n  .navbar>.container-fluid .navbar-brand {\r\n    margin-left: 15px;\r\n  }\r\n}\r\n\r\n.list-group-item {\r\n  border: none;\r\n}\r\n\r\n.li-border-true{\r\n  border: 1px solid #ddd;\r\n}\r\n\r\n.row {\r\n  margin-right: 0;\r\n  margin-left: 0;\r\n}\r\n\r\n.wrapper {\r\n  position: relative;\r\n}\r\n\r\n.wrapper .glyphicon {\r\n  position: absolute;\r\n  top: 0;\r\n  right: 0;\r\n  color: white;\r\n}\r\n\r\n.widget-element {\r\n  padding-top: 2px;\r\n  padding-bottom: 2px;\r\n}\r\n\r\n.widget-configuration {\r\n  position: absolute;\r\n  right: 15px;\r\n  padding-left: 5px;\r\n  padding-bottom: 5px;\r\n  border-bottom-left-radius: 5px;\r\n  background-color: white;\r\n  opacity: 0.7;\r\n  z-index: 3;\r\n}\r\n\r\n.yt-container {\r\n  position:relative;\r\n  padding-bottom:56.25%;\r\n  height:0;\r\n}\r\n\r\n.yt-container iframe {\r\n  position:absolute;\r\n  /* margin: auto; */\r\n  top:0;\r\n  left:0;\r\n  width:100%;\r\n  height:100%;\r\n}\r\n\r\n.column-border {\r\n}\r\n", ""]);
 
 // exports
 

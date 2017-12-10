@@ -1,15 +1,19 @@
-webpackJsonp([1],{
+webpackJsonp(["main"],{
 
-/***/ "../../../../../src async recursive":
+/***/ "../../../../../src/$$_gendir lazy recursive":
 /***/ (function(module, exports) {
 
-function webpackEmptyContext(req) {
-	throw new Error("Cannot find module '" + req + "'.");
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
 }
-webpackEmptyContext.keys = function() { return []; };
-webpackEmptyContext.resolve = webpackEmptyContext;
-module.exports = webpackEmptyContext;
-webpackEmptyContext.id = "../../../../../src async recursive";
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "../../../../../src/$$_gendir lazy recursive";
 
 /***/ }),
 
@@ -35,8 +39,8 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -51,7 +55,7 @@ var AppComponent = (function () {
     return AppComponent;
 }());
 AppComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-root',
         template: "<router-outlet></router-outlet>",
         styles: [__webpack_require__("../../../../../src/app/app.component.css")]
@@ -66,6 +70,7 @@ AppComponent = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
@@ -102,7 +107,6 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__services_flickr_service_client__ = __webpack_require__("../../../../../src/app/services/flickr.service.client.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__components_safe_pipe__ = __webpack_require__("../../../../../src/app/components/safe-pipe.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__services_shared_service_client__ = __webpack_require__("../../../../../src/app/services/shared.service.client.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -151,7 +155,7 @@ var AppModule = (function () {
     return AppModule;
 }());
 AppModule = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["M" /* NgModule */])({
         // Declare components here
         declarations: [
             __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */],
@@ -181,7 +185,7 @@ AppModule = __decorate([
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-            __WEBPACK_IMPORTED_MODULE_6__angular_http__["a" /* HttpModule */],
+            __WEBPACK_IMPORTED_MODULE_6__angular_http__["b" /* HttpModule */],
             __WEBPACK_IMPORTED_MODULE_7__angular_forms__["a" /* FormsModule */],
             __WEBPACK_IMPORTED_MODULE_5__app_routing__["a" /* Routing */]
         ],
@@ -199,6 +203,7 @@ AppModule = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Routing; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_test_test_component__ = __webpack_require__("../../../../../src/app/components/test/test.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_anonymous_register_register_component__ = __webpack_require__("../../../../../src/app/components/anonymous/register/register.component.ts");
@@ -222,7 +227,6 @@ AppModule = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_flickr_flickr_component__ = __webpack_require__("../../../../../src/app/components/flickr/flickr.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_anonymous_project_home_project_home_component__ = __webpack_require__("../../../../../src/app/components/anonymous/project-home/project-home.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_home_home_component__ = __webpack_require__("../../../../../src/app/components/home/home.component.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Routing; });
 /**
  * Created by sesha on 7/26/17.
  */
@@ -275,7 +279,7 @@ var APP_ROUTES = [
     { path: 'critic/:crid/review/:rid', component: __WEBPACK_IMPORTED_MODULE_11__components_critic_review_review_edit_review_edit_component__["a" /* ReviewEditComponent */] },
 ];
 // Export the routes as module providers
-var Routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["b" /* RouterModule */].forRoot(APP_ROUTES);
+var Routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["c" /* RouterModule */].forRoot(APP_ROUTES);
 //# sourceMappingURL=app.routing.js.map
 
 /***/ }),
@@ -301,7 +305,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/anonymous/project-home/project-home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <h1>HOME</h1>\n  <button class=\"btn btn-primary btn-block\"\n          (click)=\"register()\">Register</button>\n  <button class=\"btn btn-success btn-block\"\n          (click)=\"comedianlogin()\">Comedian Login</button>\n  <button class=\"btn btn-success btn-block\"\n          (click)=\"criticlogin()\">Critic Login</button>\n</div>\n"
+module.exports = "<div class=\"container\">\r\n  <h1>HOME</h1>\r\n  <button class=\"btn btn-primary btn-block\"\r\n          (click)=\"register()\">Register</button>\r\n  <button class=\"btn btn-success btn-block\"\r\n          (click)=\"comedianlogin()\">Comedian Login</button>\r\n  <button class=\"btn btn-success btn-block\"\r\n          (click)=\"criticlogin()\">Critic Login</button>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -309,9 +313,9 @@ module.exports = "<div class=\"container\">\n  <h1>HOME</h1>\n  <button class=\"
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProjectHomeComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProjectHomeComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -341,12 +345,12 @@ var ProjectHomeComponent = (function () {
     return ProjectHomeComponent;
 }());
 ProjectHomeComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-project-home',
         template: __webpack_require__("../../../../../src/app/components/anonymous/project-home/project-home.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/anonymous/project-home/project-home.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object])
 ], ProjectHomeComponent);
 
 var _a;
@@ -375,7 +379,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/anonymous/register/register.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n\n  <div *ngIf=\"errorFlag\"\n       class=\"alert alert-danger\">\n    {{errorMsg}}\n  </div>\n\n  <h1>Register</h1>\n\n  <form (ngSubmit) = \"register()\" #f=\"ngForm\">\n\n    <div class=\"form-group\">\n      <input placeholder=\"username\"\n             name=\"username\"\n             type=\"text\"\n             class=\"form-control\"\n             ngModel\n             required\n             #username=\"ngModel\" />\n      <span class=\"help-block\" *ngIf=\"!username.valid && username.touched\">\n      Please enter username!\n      </span>\n    </div>\n\n    <div class=\"form-group\">\n      <input placeholder=\"password\"\n             name=\"password\"\n             type=\"password\"\n             class=\"form-control\"\n             ngModel\n             required\n             #password=\"ngModel\" />\n      <span class=\"help-block\" *ngIf=\"!password.valid && password.touched\">\n      Please enter password!\n      </span>\n    </div>\n\n    <div class=\"form-group\">\n      <input placeholder=\"firstname\"\n             name=\"firstname\"\n             type=\"text\"\n             class=\"form-control\"\n             ngModel\n             required\n             #firstname=\"ngModel\" />\n      <span class=\"help-block\" *ngIf=\"!firstname.valid && firstname.touched\">\n      Please enter first name!\n      </span>\n    </div>\n\n    <div class=\"form-group\">\n      <input placeholder=\"lastname\"\n             name=\"lastname\"\n             type=\"text\"\n             class=\"form-control\"\n             ngModel\n             required\n             #lastname=\"ngModel\" />\n      <span class=\"help-block\" *ngIf=\"!lastname.valid && lastname.touched\">\n      Please enter last name!\n      </span>\n    </div>\n\n    <div class=\"form-group\">\n      <input placeholder=\"email\"\n             name=\"email\"\n             type=\"text\"\n             class=\"form-control\"\n             ngModel\n             required\n             #email=\"ngModel\" />\n      <span class=\"help-block\" *ngIf=\"!email.valid && email.touched\">\n      Please enter email!\n      </span>\n    </div>\n\n    <div class=\"form-group\">\n    <label class=\"radio-inline\">\n      <input type=\"radio\"\n             name=\"userType\"\n             ngModel\n             required\n             #userType=\"ngModel\"\n             value=\"comedian\">Comedian</label>\n    <label class=\"radio-inline\">\n      <input type=\"radio\"\n             name=\"userType\"\n             ngModel\n             required\n             #userType=\"ngModel\"\n             value=\"critic\">Critic</label>\n    </div>\n\n    <button class=\"btn btn-primary btn-block\"\n            type=\"submit\"\n            [disabled]=\"!f.valid\">Register</button>\n    <button class=\"btn btn-danger btn-block\"\n            (click)=\"home()\">Home</button>\n\n  </form>\n\n</div>\n"
+module.exports = "<div class=\"container\">\r\n\r\n  <div *ngIf=\"errorFlag\"\r\n       class=\"alert alert-danger\">\r\n    {{errorMsg}}\r\n  </div>\r\n\r\n  <h1>Register</h1>\r\n\r\n  <form (ngSubmit) = \"register()\" #f=\"ngForm\">\r\n\r\n    <div class=\"form-group\">\r\n      <input placeholder=\"username\"\r\n             name=\"username\"\r\n             type=\"text\"\r\n             class=\"form-control\"\r\n             ngModel\r\n             required\r\n             #username=\"ngModel\" />\r\n      <span class=\"help-block\" *ngIf=\"!username.valid && username.touched\">\r\n      Please enter username!\r\n      </span>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <input placeholder=\"password\"\r\n             name=\"password\"\r\n             type=\"password\"\r\n             class=\"form-control\"\r\n             ngModel\r\n             required\r\n             #password=\"ngModel\" />\r\n      <span class=\"help-block\" *ngIf=\"!password.valid && password.touched\">\r\n      Please enter password!\r\n      </span>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <input placeholder=\"firstname\"\r\n             name=\"firstname\"\r\n             type=\"text\"\r\n             class=\"form-control\"\r\n             ngModel\r\n             required\r\n             #firstname=\"ngModel\" />\r\n      <span class=\"help-block\" *ngIf=\"!firstname.valid && firstname.touched\">\r\n      Please enter first name!\r\n      </span>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <input placeholder=\"lastname\"\r\n             name=\"lastname\"\r\n             type=\"text\"\r\n             class=\"form-control\"\r\n             ngModel\r\n             required\r\n             #lastname=\"ngModel\" />\r\n      <span class=\"help-block\" *ngIf=\"!lastname.valid && lastname.touched\">\r\n      Please enter last name!\r\n      </span>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <input placeholder=\"email\"\r\n             name=\"email\"\r\n             type=\"text\"\r\n             class=\"form-control\"\r\n             ngModel\r\n             required\r\n             #email=\"ngModel\" />\r\n      <span class=\"help-block\" *ngIf=\"!email.valid && email.touched\">\r\n      Please enter email!\r\n      </span>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n    <label class=\"radio-inline\">\r\n      <input type=\"radio\"\r\n             name=\"userType\"\r\n             ngModel\r\n             required\r\n             #userType=\"ngModel\"\r\n             value=\"comedian\">Comedian</label>\r\n    <label class=\"radio-inline\">\r\n      <input type=\"radio\"\r\n             name=\"userType\"\r\n             ngModel\r\n             required\r\n             #userType=\"ngModel\"\r\n             value=\"critic\">Critic</label>\r\n    </div>\r\n\r\n    <button class=\"btn btn-primary btn-block\"\r\n            type=\"submit\"\r\n            [disabled]=\"!f.valid\">Register</button>\r\n    <button class=\"btn btn-danger btn-block\"\r\n            (click)=\"home()\">Home</button>\r\n\r\n  </form>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -383,13 +387,13 @@ module.exports = "<div class=\"container\">\n\n  <div *ngIf=\"errorFlag\"\n     
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_critic_service_client__ = __webpack_require__("../../../../../src/app/services/critic.service.client.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_comedian_service_client__ = __webpack_require__("../../../../../src/app/services/comedian.service.client.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_service_client__ = __webpack_require__("../../../../../src/app/services/shared.service.client.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -461,16 +465,16 @@ var RegisterComponent = (function () {
     return RegisterComponent;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_15" /* ViewChild */])('f'),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ViewChild */])('f'),
     __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* NgForm */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* NgForm */]) === "function" && _a || Object)
 ], RegisterComponent.prototype, "loginForm", void 0);
 RegisterComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-register',
         template: __webpack_require__("../../../../../src/app/components/anonymous/register/register.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/anonymous/register/register.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5__services_shared_service_client__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__services_shared_service_client__["a" /* SharedService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__services_critic_service_client__["a" /* CriticService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_critic_service_client__["a" /* CriticService */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4__services_comedian_service_client__["a" /* ComedianService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_comedian_service_client__["a" /* ComedianService */]) === "function" && _e || Object])
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5__services_shared_service_client__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__services_shared_service_client__["a" /* SharedService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__services_critic_service_client__["a" /* CriticService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_critic_service_client__["a" /* CriticService */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4__services_comedian_service_client__["a" /* ComedianService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_comedian_service_client__["a" /* ComedianService */]) === "function" && _e || Object])
 ], RegisterComponent);
 
 var _a, _b, _c, _d, _e;
@@ -499,7 +503,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/comedian/bit/image/image-create/image-create.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div class=\"container-fluid\">\n\n    <!--heading on the nav bar-->\n    <p class=\"navbar-header pull-left\">\n      <a class=\"navbar-brand thick\">\n        <b>Create Image</b>\n      </a>\n    </p>\n\n    <!--cross-->\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"images()\"  class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-remove\"></span>\n      </a>\n    </p>\n\n  </div>\n</nav>\n\n<div class=\"container\">\n  <form #f=\"ngForm\">\n\n    <div class=\"form-group\">\n      <label for=\"url\">Image URL</label>\n      <input type=\"text\"\n             class=\"form-control\"\n             id=\"url\"\n             name=\"url\"\n             ngModel\n             required\n             #url=\"ngModel\" >\n      <span class=\"help-block\" *ngIf=\"!url.valid && url.touched\">\n        Please enter image url!\n        </span>\n    </div>\n\n    <button class=\"btn btn-success btn-block\"\n            (click)=\"create()\">Create</button>\n\n  </form>\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <!--heading on the nav bar-->\r\n    <p class=\"navbar-header pull-left\">\r\n      <a class=\"navbar-brand thick\">\r\n        <b>Create Image</b>\r\n      </a>\r\n    </p>\r\n\r\n    <!--cross-->\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"images()\"  class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-remove\"></span>\r\n      </a>\r\n    </p>\r\n\r\n  </div>\r\n</nav>\r\n\r\n<div class=\"container\">\r\n  <form #f=\"ngForm\">\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"url\">Image URL</label>\r\n      <input type=\"text\"\r\n             class=\"form-control\"\r\n             id=\"url\"\r\n             name=\"url\"\r\n             ngModel\r\n             required\r\n             #url=\"ngModel\" >\r\n      <span class=\"help-block\" *ngIf=\"!url.valid && url.touched\">\r\n        Please enter image url!\r\n        </span>\r\n    </div>\r\n\r\n    <button class=\"btn btn-success btn-block\"\r\n            (click)=\"create()\">Create</button>\r\n\r\n  </form>\r\n</div>\r\n\r\n<!-- Footer -->\r\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\r\n  <div class=\"container-fluid\">\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"profile()\" class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-user\"></span>\r\n      </a>\r\n    </p>\r\n  </div>\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -507,11 +511,11 @@ module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ImageCreateComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_bit_service_client__ = __webpack_require__("../../../../../src/app/services/bit.service.client.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ImageCreateComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -555,16 +559,16 @@ var ImageCreateComponent = (function () {
     return ImageCreateComponent;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_15" /* ViewChild */])('f'),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ViewChild */])('f'),
     __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* NgForm */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* NgForm */]) === "function" && _a || Object)
 ], ImageCreateComponent.prototype, "newWebsiteForm", void 0);
 ImageCreateComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-image-create',
         template: __webpack_require__("../../../../../src/app/components/comedian/bit/image/image-create/image-create.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/comedian/bit/image/image-create/image-create.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_bit_service_client__["a" /* BitService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_bit_service_client__["a" /* BitService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_bit_service_client__["a" /* BitService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_bit_service_client__["a" /* BitService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _d || Object])
 ], ImageCreateComponent);
 
 var _a, _b, _c, _d;
@@ -593,7 +597,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/comedian/bit/image/image-edit/image-edit.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div class=\"container-fluid\">\n\n    <!--heading on the nav bar-->\n    <p class=\"navbar-header pull-left\">\n      <a class=\"navbar-brand thick\">\n        <b>Edit Image</b>\n      </a>\n    </p>\n\n    <!--cancel-->\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"images()\"  class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-remove\"></span>\n      </a>\n    </p>\n\n  </div>\n</nav>\n\n<div class=\"container\">\n  <form>\n\n    <div class=\"form-group\">\n      <label for=\"url\">Image URL</label>\n      <input [(ngModel)]=\"url\" name=\"url\" type=\"text\" class=\"form-control\" id=\"url\" >\n    </div>\n\n    <button class=\"btn btn-success btn-block\"\n            (click)=\"edit()\">Edit</button>\n\n    <button class=\"btn btn-danger btn-block\"\n            (click)=\"deleteImage()\">Delete</button>\n\n  </form>\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <!--heading on the nav bar-->\r\n    <p class=\"navbar-header pull-left\">\r\n      <a class=\"navbar-brand thick\">\r\n        <b>Edit Image</b>\r\n      </a>\r\n    </p>\r\n\r\n    <!--cancel-->\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"images()\"  class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-remove\"></span>\r\n      </a>\r\n    </p>\r\n\r\n  </div>\r\n</nav>\r\n\r\n<div class=\"container\">\r\n  <form>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"url\">Image URL</label>\r\n      <input [(ngModel)]=\"url\" name=\"url\" type=\"text\" class=\"form-control\" id=\"url\" >\r\n    </div>\r\n\r\n    <button class=\"btn btn-success btn-block\"\r\n            (click)=\"edit()\">Edit</button>\r\n\r\n    <button class=\"btn btn-danger btn-block\"\r\n            (click)=\"deleteImage()\">Delete</button>\r\n\r\n  </form>\r\n</div>\r\n\r\n<!-- Footer -->\r\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\r\n  <div class=\"container-fluid\">\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"profile()\" class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-user\"></span>\r\n      </a>\r\n    </p>\r\n  </div>\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -601,10 +605,10 @@ module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ImageEditComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_bit_service_client__ = __webpack_require__("../../../../../src/app/services/bit.service.client.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ImageEditComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -658,12 +662,12 @@ var ImageEditComponent = (function () {
     return ImageEditComponent;
 }());
 ImageEditComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-image-edit',
         template: __webpack_require__("../../../../../src/app/components/comedian/bit/image/image-edit/image-edit.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/comedian/bit/image/image-edit/image-edit.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_bit_service_client__["a" /* BitService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_bit_service_client__["a" /* BitService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_bit_service_client__["a" /* BitService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_bit_service_client__["a" /* BitService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _c || Object])
 ], ImageEditComponent);
 
 var _a, _b, _c;
@@ -692,7 +696,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/comedian/bit/image/image-list/image-list.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div class=\"container-fluid\">\n\n    <!--heading on the nav bar-->\n    <p class=\"navbar-header pull-left\">\n      <a class=\"navbar-brand thick\">\n        <b>Images</b>\n      </a>\n    </p>\n\n    <!--create-->\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"create()\"  class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-plus\"></span>\n      </a>\n    </p>\n\n  </div>\n</nav>\n\n<div class=\"container\">\n\n  <ul class=\"list-group\">\n    <li *ngFor=\"let image of images\" class=\"list-group-item li-border-true rounded\">\n      <a (click)=\"edit(image)\">\n        <img width=\"100%\" [src]=\"image.url | safe\">\n      </a>\n    </li>\n  </ul>\n\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <!--heading on the nav bar-->\r\n    <p class=\"navbar-header pull-left\">\r\n      <a class=\"navbar-brand thick\">\r\n        <b>Images</b>\r\n      </a>\r\n    </p>\r\n\r\n    <!--create-->\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"create()\"  class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-plus\"></span>\r\n      </a>\r\n    </p>\r\n\r\n  </div>\r\n</nav>\r\n\r\n<div class=\"container\">\r\n\r\n  <ul class=\"list-group\">\r\n    <li *ngFor=\"let image of images\" class=\"list-group-item li-border-true rounded\">\r\n      <a (click)=\"edit(image)\">\r\n        <img width=\"100%\" [src]=\"image.url | safe\">\r\n      </a>\r\n    </li>\r\n  </ul>\r\n\r\n</div>\r\n\r\n<!-- Footer -->\r\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\r\n  <div class=\"container-fluid\">\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"profile()\" class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-user\"></span>\r\n      </a>\r\n    </p>\r\n  </div>\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -700,11 +704,11 @@ module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ImageListComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_bit_service_client__ = __webpack_require__("../../../../../src/app/services/bit.service.client.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__ = __webpack_require__("../../../../../src/app/services/shared.service.client.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ImageListComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -754,12 +758,12 @@ var ImageListComponent = (function () {
     return ImageListComponent;
 }());
 ImageListComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-image-list',
         template: __webpack_require__("../../../../../src/app/components/comedian/bit/image/image-list/image-list.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/comedian/bit/image/image-list/image-list.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__["a" /* SharedService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_bit_service_client__["a" /* BitService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_bit_service_client__["a" /* BitService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__["a" /* SharedService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_bit_service_client__["a" /* BitService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_bit_service_client__["a" /* BitService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _d || Object])
 ], ImageListComponent);
 
 var _a, _b, _c, _d;
@@ -788,7 +792,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/comedian/bit/video/video-create/video-create.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div class=\"container-fluid\">\n\n    <!--heading on the nav bar-->\n    <p class=\"navbar-header pull-left\">\n      <a class=\"navbar-brand thick\">\n        <b>Create Video</b>\n      </a>\n    </p>\n\n    <!--cross-->\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"videos()\"  class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-remove\"></span>\n      </a>\n    </p>\n\n  </div>\n</nav>\n\n<div class=\"container\">\n  <form #f=\"ngForm\">\n\n    <div class=\"form-group\">\n      <label for=\"url\">Video URL</label>\n      <input type=\"text\"\n             class=\"form-control\"\n             id=\"url\"\n             name=\"url\"\n             ngModel\n             required\n             #url=\"ngModel\" >\n      <span class=\"help-block\" *ngIf=\"!url.valid && url.touched\">\n        Please enter video url!\n        </span>\n    </div>\n\n    <button class=\"btn btn-success btn-block\"\n            (click)=\"create()\">Create</button>\n\n  </form>\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <!--heading on the nav bar-->\r\n    <p class=\"navbar-header pull-left\">\r\n      <a class=\"navbar-brand thick\">\r\n        <b>Create Video</b>\r\n      </a>\r\n    </p>\r\n\r\n    <!--cross-->\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"videos()\"  class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-remove\"></span>\r\n      </a>\r\n    </p>\r\n\r\n  </div>\r\n</nav>\r\n\r\n<div class=\"container\">\r\n  <form #f=\"ngForm\">\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"url\">Video URL</label>\r\n      <input type=\"text\"\r\n             class=\"form-control\"\r\n             id=\"url\"\r\n             name=\"url\"\r\n             ngModel\r\n             required\r\n             #url=\"ngModel\" >\r\n      <span class=\"help-block\" *ngIf=\"!url.valid && url.touched\">\r\n        Please enter video url!\r\n        </span>\r\n    </div>\r\n\r\n    <button class=\"btn btn-success btn-block\"\r\n            (click)=\"create()\">Create</button>\r\n\r\n  </form>\r\n</div>\r\n\r\n<!-- Footer -->\r\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\r\n  <div class=\"container-fluid\">\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"profile()\" class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-user\"></span>\r\n      </a>\r\n    </p>\r\n  </div>\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -796,11 +800,11 @@ module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VideoCreateComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_bit_service_client__ = __webpack_require__("../../../../../src/app/services/bit.service.client.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VideoCreateComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -844,16 +848,16 @@ var VideoCreateComponent = (function () {
     return VideoCreateComponent;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_15" /* ViewChild */])('f'),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ViewChild */])('f'),
     __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* NgForm */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* NgForm */]) === "function" && _a || Object)
 ], VideoCreateComponent.prototype, "newWebsiteForm", void 0);
 VideoCreateComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-video-create',
         template: __webpack_require__("../../../../../src/app/components/comedian/bit/video/video-create/video-create.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/comedian/bit/video/video-create/video-create.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_bit_service_client__["a" /* BitService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_bit_service_client__["a" /* BitService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_bit_service_client__["a" /* BitService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_bit_service_client__["a" /* BitService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _d || Object])
 ], VideoCreateComponent);
 
 var _a, _b, _c, _d;
@@ -882,7 +886,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/comedian/bit/video/video-edit/video-edit.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div class=\"container-fluid\">\n\n    <!--heading on the nav bar-->\n    <p class=\"navbar-header pull-left\">\n      <a class=\"navbar-brand thick\">\n        <b>Edit Video</b>\n      </a>\n    </p>\n\n    <!--cancel-->\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"videos()\"  class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-remove\"></span>\n      </a>\n    </p>\n\n  </div>\n</nav>\n\n<div class=\"container\">\n  <form>\n\n    <div class=\"form-group\">\n      <label for=\"url\">Video URL</label>\n      <input [(ngModel)]=\"url\" name=\"url\" type=\"text\" class=\"form-control\" id=\"url\" >\n    </div>\n\n    <button class=\"btn btn-success btn-block\"\n            (click)=\"edit()\">Edit</button>\n\n    <button class=\"btn btn-danger btn-block\"\n            (click)=\"deleteVideo()\">Delete</button>\n\n  </form>\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <!--heading on the nav bar-->\r\n    <p class=\"navbar-header pull-left\">\r\n      <a class=\"navbar-brand thick\">\r\n        <b>Edit Video</b>\r\n      </a>\r\n    </p>\r\n\r\n    <!--cancel-->\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"videos()\"  class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-remove\"></span>\r\n      </a>\r\n    </p>\r\n\r\n  </div>\r\n</nav>\r\n\r\n<div class=\"container\">\r\n  <form>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"url\">Video URL</label>\r\n      <input [(ngModel)]=\"url\" name=\"url\" type=\"text\" class=\"form-control\" id=\"url\" >\r\n    </div>\r\n\r\n    <button class=\"btn btn-success btn-block\"\r\n            (click)=\"edit()\">Edit</button>\r\n\r\n    <button class=\"btn btn-danger btn-block\"\r\n            (click)=\"deleteVideo()\">Delete</button>\r\n\r\n  </form>\r\n</div>\r\n\r\n<!-- Footer -->\r\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\r\n  <div class=\"container-fluid\">\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"profile()\" class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-user\"></span>\r\n      </a>\r\n    </p>\r\n  </div>\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -890,10 +894,10 @@ module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VideoEditComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_bit_service_client__ = __webpack_require__("../../../../../src/app/services/bit.service.client.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VideoEditComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -947,12 +951,12 @@ var VideoEditComponent = (function () {
     return VideoEditComponent;
 }());
 VideoEditComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-video-edit',
         template: __webpack_require__("../../../../../src/app/components/comedian/bit/video/video-edit/video-edit.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/comedian/bit/video/video-edit/video-edit.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_bit_service_client__["a" /* BitService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_bit_service_client__["a" /* BitService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_bit_service_client__["a" /* BitService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_bit_service_client__["a" /* BitService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _c || Object])
 ], VideoEditComponent);
 
 var _a, _b, _c;
@@ -981,7 +985,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/comedian/bit/video/video-list/video-list.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div class=\"container-fluid\">\n\n    <!--heading on the nav bar-->\n    <p class=\"navbar-header pull-left\">\n      <a class=\"navbar-brand thick\">\n        <b>Videos</b>\n      </a>\n    </p>\n\n    <!--create-->\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"create()\"  class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-plus\"></span>\n      </a>\n    </p>\n\n  </div>\n</nav>\n\n<div class=\"container\">\n\n  <ul class=\"list-group\">\n    <li *ngFor=\"let video of videos\" class=\"list-group-item li-border-true rounded\">\n      <a (click)=\"edit(video)\">\n        <span class=\"glyphicon glyphicon-cog\"></span>\n      </a>\n      <div class=\"yt-container\">\n        <iframe [src]=\"video.url | safe\" frameborder=\"0\" allowfullscreen></iframe>\n      </div>\n    </li>\n  </ul>\n\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <!--heading on the nav bar-->\r\n    <p class=\"navbar-header pull-left\">\r\n      <a class=\"navbar-brand thick\">\r\n        <b>Videos</b>\r\n      </a>\r\n    </p>\r\n\r\n    <!--create-->\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"create()\"  class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-plus\"></span>\r\n      </a>\r\n    </p>\r\n\r\n  </div>\r\n</nav>\r\n\r\n<div class=\"container\">\r\n\r\n  <ul class=\"list-group\">\r\n    <li *ngFor=\"let video of videos\" class=\"list-group-item li-border-true rounded\">\r\n      <a (click)=\"edit(video)\">\r\n        <span class=\"glyphicon glyphicon-cog\"></span>\r\n      </a>\r\n      <div class=\"yt-container\">\r\n        <iframe [src]=\"video.url | safe\" frameborder=\"0\" allowfullscreen></iframe>\r\n      </div>\r\n    </li>\r\n  </ul>\r\n\r\n</div>\r\n\r\n<!-- Footer -->\r\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\r\n  <div class=\"container-fluid\">\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"profile()\" class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-user\"></span>\r\n      </a>\r\n    </p>\r\n  </div>\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -989,11 +993,11 @@ module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VideoListComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_bit_service_client__ = __webpack_require__("../../../../../src/app/services/bit.service.client.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__ = __webpack_require__("../../../../../src/app/services/shared.service.client.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VideoListComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1043,12 +1047,12 @@ var VideoListComponent = (function () {
     return VideoListComponent;
 }());
 VideoListComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-video-list',
         template: __webpack_require__("../../../../../src/app/components/comedian/bit/video/video-list/video-list.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/comedian/bit/video/video-list/video-list.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__["a" /* SharedService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_bit_service_client__["a" /* BitService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_bit_service_client__["a" /* BitService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__["a" /* SharedService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_bit_service_client__["a" /* BitService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_bit_service_client__["a" /* BitService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _d || Object])
 ], VideoListComponent);
 
 var _a, _b, _c, _d;
@@ -1077,7 +1081,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/comedian/comedian-account/comedian-account.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div class=\"container-fluid\">\n\n    <!--heading on the nav bar-->\n    <p class=\"navbar-header pull-left\">\n      <a class=\"navbar-brand thick\">\n        <b>Account Details</b>\n      </a>\n    </p>\n\n    <!--tick mark-->\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"editAccount()\"  class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-ok\"></span>\n      </a>\n    </p>\n\n  </div>\n</nav>\n\n\n<div class=\"container\">\n  <form>\n\n    <div class=\"form-group\">\n      <label for=\"username\">Username</label>\n      <input [(ngModel)]=\"username\" name=\"username\" type=\"text\" class=\"form-control\" id=\"username\" >\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"email\">Email address</label>\n      <input [(ngModel)]=\"email\" name=\"email\" type=\"email\" class=\"form-control\" id=\"email\" >\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"first-name\">First Name</label>\n      <input [(ngModel)]=\"firstName\" name=\"firstName\" type=\"text\" class=\"form-control\" id=\"first-name\" >\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"last-name\">Last Name</label>\n      <input [(ngModel)]=\"lastName\" name=\"lastName\" type=\"text\" class=\"form-control\" id=\"last-name\" >\n    </div>\n\n  </form>\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <!--heading on the nav bar-->\r\n    <p class=\"navbar-header pull-left\">\r\n      <a class=\"navbar-brand thick\">\r\n        <b>Account Details</b>\r\n      </a>\r\n    </p>\r\n\r\n    <!--tick mark-->\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"editAccount()\"  class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-ok\"></span>\r\n      </a>\r\n    </p>\r\n\r\n  </div>\r\n</nav>\r\n\r\n\r\n<div class=\"container\">\r\n  <form>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"username\">Username</label>\r\n      <input [(ngModel)]=\"username\" name=\"username\" type=\"text\" class=\"form-control\" id=\"username\" >\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"email\">Email address</label>\r\n      <input [(ngModel)]=\"email\" name=\"email\" type=\"email\" class=\"form-control\" id=\"email\" >\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"first-name\">First Name</label>\r\n      <input [(ngModel)]=\"firstName\" name=\"firstName\" type=\"text\" class=\"form-control\" id=\"first-name\" >\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"last-name\">Last Name</label>\r\n      <input [(ngModel)]=\"lastName\" name=\"lastName\" type=\"text\" class=\"form-control\" id=\"last-name\" >\r\n    </div>\r\n\r\n  </form>\r\n</div>\r\n\r\n<!-- Footer -->\r\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\r\n  <div class=\"container-fluid\">\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"profile()\" class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-user\"></span>\r\n      </a>\r\n    </p>\r\n  </div>\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -1085,10 +1089,10 @@ module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComedianAccountComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_comedian_service_client__ = __webpack_require__("../../../../../src/app/services/comedian.service.client.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComedianAccountComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1140,12 +1144,12 @@ var ComedianAccountComponent = (function () {
     return ComedianAccountComponent;
 }());
 ComedianAccountComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-comedian-account',
         template: __webpack_require__("../../../../../src/app/components/comedian/comedian-account/comedian-account.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/comedian/comedian-account/comedian-account.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_comedian_service_client__["a" /* ComedianService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_comedian_service_client__["a" /* ComedianService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_comedian_service_client__["a" /* ComedianService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_comedian_service_client__["a" /* ComedianService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* ActivatedRoute */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _c || Object])
 ], ComedianAccountComponent);
 
 var _a, _b, _c;
@@ -1174,7 +1178,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/comedian/comedian-login/comedian-login.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n\n  <div *ngIf=\"errorFlag\"\n       class=\"alert alert-danger\">\n    {{errorMsg}}\n  </div>\n\n  <h1>Comedian Login</h1>\n\n  <form (ngSubmit) = \"login()\" #f=\"ngForm\">\n\n    <div class=\"form-group\">\n      <input placeholder=\"username\"\n             name=\"username\"\n             type=\"text\"\n             class=\"form-control\"\n             ngModel\n             required\n             #username=\"ngModel\" />\n      <span class=\"help-block\" *ngIf=\"!username.valid && username.touched\">\n      Please enter username!\n      </span>\n    </div>\n\n    <div class=\"form-group\">\n      <input placeholder=\"password\"\n             name=\"password\"\n             type=\"password\"\n             class=\"form-control\"\n             ngModel\n             required\n             #password=\"ngModel\" />\n      <span class=\"help-block\" *ngIf=\"!password.valid && password.touched\">\n      Please enter password!\n      </span>\n    </div>\n\n    <button class=\"btn btn-primary btn-block\"\n            type=\"submit\"\n            [disabled]=\"!f.valid\" >Login</button>\n\n    <button class=\"btn btn-success btn-block\"\n            (click)=\"register()\">Register</button>\n\n    <button class=\"btn btn-success btn-block\"\n            (click)=\"home()\">Home</button>\n\n  </form>\n\n</div>\n"
+module.exports = "<div class=\"container\">\r\n\r\n  <div *ngIf=\"errorFlag\"\r\n       class=\"alert alert-danger\">\r\n    {{errorMsg}}\r\n  </div>\r\n\r\n  <h1>Comedian Login</h1>\r\n\r\n  <form (ngSubmit) = \"login()\" #f=\"ngForm\">\r\n\r\n    <div class=\"form-group\">\r\n      <input placeholder=\"username\"\r\n             name=\"username\"\r\n             type=\"text\"\r\n             class=\"form-control\"\r\n             ngModel\r\n             required\r\n             #username=\"ngModel\" />\r\n      <span class=\"help-block\" *ngIf=\"!username.valid && username.touched\">\r\n      Please enter username!\r\n      </span>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <input placeholder=\"password\"\r\n             name=\"password\"\r\n             type=\"password\"\r\n             class=\"form-control\"\r\n             ngModel\r\n             required\r\n             #password=\"ngModel\" />\r\n      <span class=\"help-block\" *ngIf=\"!password.valid && password.touched\">\r\n      Please enter password!\r\n      </span>\r\n    </div>\r\n\r\n    <button class=\"btn btn-primary btn-block\"\r\n            type=\"submit\"\r\n            [disabled]=\"!f.valid\" >Login</button>\r\n\r\n    <button class=\"btn btn-success btn-block\"\r\n            (click)=\"register()\">Register</button>\r\n\r\n    <button class=\"btn btn-success btn-block\"\r\n            (click)=\"home()\">Home</button>\r\n\r\n  </form>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1182,12 +1186,12 @@ module.exports = "<div class=\"container\">\n\n  <div *ngIf=\"errorFlag\"\n     
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComedianLoginComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_comedian_service_client__ = __webpack_require__("../../../../../src/app/services/comedian.service.client.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_shared_service_client__ = __webpack_require__("../../../../../src/app/services/shared.service.client.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComedianLoginComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1234,16 +1238,16 @@ var ComedianLoginComponent = (function () {
     return ComedianLoginComponent;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_15" /* ViewChild */])('f'),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ViewChild */])('f'),
     __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* NgForm */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* NgForm */]) === "function" && _a || Object)
 ], ComedianLoginComponent.prototype, "loginForm", void 0);
 ComedianLoginComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-comedian-login',
         template: __webpack_require__("../../../../../src/app/components/comedian/comedian-login/comedian-login.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/comedian/comedian-login/comedian-login.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_comedian_service_client__["a" /* ComedianService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_comedian_service_client__["a" /* ComedianService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__services_shared_service_client__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_shared_service_client__["a" /* SharedService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_comedian_service_client__["a" /* ComedianService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_comedian_service_client__["a" /* ComedianService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__services_shared_service_client__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_shared_service_client__["a" /* SharedService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _d || Object])
 ], ComedianLoginComponent);
 
 var _a, _b, _c, _d;
@@ -1272,7 +1276,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/comedian/comedian-profile/comedian-profile.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div class=\"container-fluid\">\n\n    <!--heading on the nav bar-->\n    <p class=\"navbar-header pull-left\">\n      <a class=\"navbar-brand thick\">\n        <b>{{username}}'s Profile</b>\n      </a>\n    </p>\n\n    <!--logout-->\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"logout()\"  class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-off\"></span>\n      </a>\n    </p>\n\n  </div>\n</nav>\n\n<div class=\"container\">\n  <img width=\"10%\" [src]=\"url | safe\">\n  <a (click)=\"flickr()\"  class=\"navbar-link\">\n    <b>Change Profile Picture!</b>\n  </a>\n\n  <ul class=\"list-group\">\n    <li class=\"list-group-item\">\n      <a (click)=\"account()\"  class=\"navbar-link\">\n        <b>Account</b>\n      </a>\n    </li>\n\n    <li class=\"list-group-item\">\n      <a (click)=\"portfolio()\"  class=\"navbar-link\">\n        <b>Portfolio</b>\n      </a>\n    </li>\n\n    <li class=\"list-group-item\">\n      <a (click)=\"image()\"  class=\"navbar-link\">\n        <b>Images</b>\n      </a>\n    </li>\n\n    <li class=\"list-group-item\">\n      <a (click)=\"video()\"  class=\"navbar-link\">\n        <b>Videos</b>\n      </a>\n    </li>\n\n    <li class=\"list-group-item\">\n      <a (click)=\"search()\"  class=\"navbar-link\">\n        <b>Check out your favorite Comics!</b>\n      </a>\n    </li>\n  </ul>\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <!--heading on the nav bar-->\r\n    <p class=\"navbar-header pull-left\">\r\n      <a class=\"navbar-brand thick\">\r\n        <b>{{username}}'s Profile</b>\r\n      </a>\r\n    </p>\r\n\r\n    <!--logout-->\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"logout()\"  class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-off\"></span>\r\n      </a>\r\n    </p>\r\n\r\n  </div>\r\n</nav>\r\n\r\n<div class=\"container\">\r\n  <img width=\"10%\" [src]=\"url | safe\">\r\n  <a (click)=\"flickr()\"  class=\"navbar-link\">\r\n    <b>Change Profile Picture!</b>\r\n  </a>\r\n\r\n  <ul class=\"list-group\">\r\n    <li class=\"list-group-item\">\r\n      <a (click)=\"account()\"  class=\"navbar-link\">\r\n        <b>Account</b>\r\n      </a>\r\n    </li>\r\n\r\n    <li class=\"list-group-item\">\r\n      <a (click)=\"portfolio()\"  class=\"navbar-link\">\r\n        <b>Portfolio</b>\r\n      </a>\r\n    </li>\r\n\r\n    <li class=\"list-group-item\">\r\n      <a (click)=\"image()\"  class=\"navbar-link\">\r\n        <b>Images</b>\r\n      </a>\r\n    </li>\r\n\r\n    <li class=\"list-group-item\">\r\n      <a (click)=\"video()\"  class=\"navbar-link\">\r\n        <b>Videos</b>\r\n      </a>\r\n    </li>\r\n\r\n    <li class=\"list-group-item\">\r\n      <a (click)=\"search()\"  class=\"navbar-link\">\r\n        <b>Check out your favorite Comics!</b>\r\n      </a>\r\n    </li>\r\n  </ul>\r\n</div>\r\n\r\n<!-- Footer -->\r\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\r\n  <div class=\"container-fluid\">\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"profile()\" class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-user\"></span>\r\n      </a>\r\n    </p>\r\n  </div>\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -1280,11 +1284,11 @@ module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComedianProfileComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_comedian_service_client__ = __webpack_require__("../../../../../src/app/services/comedian.service.client.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__ = __webpack_require__("../../../../../src/app/services/shared.service.client.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComedianProfileComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1360,12 +1364,12 @@ var ComedianProfileComponent = (function () {
     return ComedianProfileComponent;
 }());
 ComedianProfileComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-comedian-profile',
         template: __webpack_require__("../../../../../src/app/components/comedian/comedian-profile/comedian-profile.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/comedian/comedian-profile/comedian-profile.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__["a" /* SharedService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_comedian_service_client__["a" /* ComedianService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_comedian_service_client__["a" /* ComedianService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__["a" /* SharedService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_comedian_service_client__["a" /* ComedianService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_comedian_service_client__["a" /* ComedianService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* ActivatedRoute */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _d || Object])
 ], ComedianProfileComponent);
 
 var _a, _b, _c, _d;
@@ -1394,7 +1398,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/comedian/portfolio/portfolio.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div class=\"container-fluid\">\n\n    <!--heading on the nav bar-->\n    <p class=\"navbar-header pull-left\">\n      <a class=\"navbar-brand thick\">\n        <b>Portfolio</b>\n      </a>\n    </p>\n\n  </div>\n</nav>\n\n<div class=\"container\">\n\n  <ul class=\"list-group\">\n    <li *ngFor=\"let bit of bits\" class=\"list-group-item li-border-true rounded\">\n      <div [ngSwitch]=\"bit.type\">\n        <div *ngSwitchCase=\"'IMAGE'\">\n          <img width=\"100%\" [src]=\"bit.url | safe\">\n        </div>\n        <div class=\"yt-container\" *ngSwitchCase=\"'VIDEO'\">\n          <iframe [src]=\"bit.url | safe\" frameborder=\"0\" allowfullscreen></iframe>\n        </div>\n      </div>\n    </li>\n  </ul>\n\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <!--heading on the nav bar-->\r\n    <p class=\"navbar-header pull-left\">\r\n      <a class=\"navbar-brand thick\">\r\n        <b>Portfolio</b>\r\n      </a>\r\n    </p>\r\n\r\n  </div>\r\n</nav>\r\n\r\n<div class=\"container\">\r\n\r\n  <ul class=\"list-group\">\r\n    <li *ngFor=\"let bit of bits\" class=\"list-group-item li-border-true rounded\">\r\n      <div [ngSwitch]=\"bit.type\">\r\n        <div *ngSwitchCase=\"'IMAGE'\">\r\n          <img width=\"100%\" [src]=\"bit.url | safe\">\r\n        </div>\r\n        <div class=\"yt-container\" *ngSwitchCase=\"'VIDEO'\">\r\n          <iframe [src]=\"bit.url | safe\" frameborder=\"0\" allowfullscreen></iframe>\r\n        </div>\r\n      </div>\r\n    </li>\r\n  </ul>\r\n\r\n</div>\r\n\r\n<!-- Footer -->\r\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -1402,11 +1406,11 @@ module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PortfolioComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_bit_service_client__ = __webpack_require__("../../../../../src/app/services/bit.service.client.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__ = __webpack_require__("../../../../../src/app/services/shared.service.client.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PortfolioComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1442,12 +1446,12 @@ var PortfolioComponent = (function () {
     return PortfolioComponent;
 }());
 PortfolioComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-portfolio',
         template: __webpack_require__("../../../../../src/app/components/comedian/portfolio/portfolio.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/comedian/portfolio/portfolio.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__["a" /* SharedService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_bit_service_client__["a" /* BitService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_bit_service_client__["a" /* BitService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__["a" /* SharedService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_bit_service_client__["a" /* BitService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_bit_service_client__["a" /* BitService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _d || Object])
 ], PortfolioComponent);
 
 var _a, _b, _c, _d;
@@ -1476,7 +1480,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/critic/critic-account/critic-account.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div class=\"container-fluid\">\n\n    <!--heading on the nav bar-->\n    <p class=\"navbar-header pull-left\">\n      <a class=\"navbar-brand thick\">\n        <b>Account Details</b>\n      </a>\n    </p>\n\n    <!--tick mark-->\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"editAccount()\"  class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-ok\"></span>\n      </a>\n    </p>\n\n  </div>\n</nav>\n\n\n<div class=\"container\">\n  <form>\n\n    <div class=\"form-group\">\n      <label for=\"username\">Username</label>\n      <input [(ngModel)]=\"username\" name=\"username\" type=\"text\" class=\"form-control\" id=\"username\" >\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"email\">Email address</label>\n      <input [(ngModel)]=\"email\" name=\"email\" type=\"email\" class=\"form-control\" id=\"email\" >\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"first-name\">First Name</label>\n      <input [(ngModel)]=\"firstName\" name=\"firstName\" type=\"text\" class=\"form-control\" id=\"first-name\" >\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"last-name\">Last Name</label>\n      <input [(ngModel)]=\"lastName\" name=\"lastName\" type=\"text\" class=\"form-control\" id=\"last-name\" >\n    </div>\n\n  </form>\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <!--heading on the nav bar-->\r\n    <p class=\"navbar-header pull-left\">\r\n      <a class=\"navbar-brand thick\">\r\n        <b>Account Details</b>\r\n      </a>\r\n    </p>\r\n\r\n    <!--tick mark-->\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"editAccount()\"  class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-ok\"></span>\r\n      </a>\r\n    </p>\r\n\r\n  </div>\r\n</nav>\r\n\r\n\r\n<div class=\"container\">\r\n  <form>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"username\">Username</label>\r\n      <input [(ngModel)]=\"username\" name=\"username\" type=\"text\" class=\"form-control\" id=\"username\" >\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"email\">Email address</label>\r\n      <input [(ngModel)]=\"email\" name=\"email\" type=\"email\" class=\"form-control\" id=\"email\" >\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"first-name\">First Name</label>\r\n      <input [(ngModel)]=\"firstName\" name=\"firstName\" type=\"text\" class=\"form-control\" id=\"first-name\" >\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"last-name\">Last Name</label>\r\n      <input [(ngModel)]=\"lastName\" name=\"lastName\" type=\"text\" class=\"form-control\" id=\"last-name\" >\r\n    </div>\r\n\r\n  </form>\r\n</div>\r\n\r\n<!-- Footer -->\r\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\r\n  <div class=\"container-fluid\">\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"profile()\" class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-user\"></span>\r\n      </a>\r\n    </p>\r\n  </div>\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -1484,10 +1488,10 @@ module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CriticAccountComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_critic_service_client__ = __webpack_require__("../../../../../src/app/services/critic.service.client.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CriticAccountComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1539,12 +1543,12 @@ var CriticAccountComponent = (function () {
     return CriticAccountComponent;
 }());
 CriticAccountComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-critic-account',
         template: __webpack_require__("../../../../../src/app/components/critic/critic-account/critic-account.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/critic/critic-account/critic-account.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_critic_service_client__["a" /* CriticService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_critic_service_client__["a" /* CriticService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_critic_service_client__["a" /* CriticService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_critic_service_client__["a" /* CriticService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* ActivatedRoute */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _c || Object])
 ], CriticAccountComponent);
 
 var _a, _b, _c;
@@ -1573,7 +1577,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/critic/critic-login/critic-login.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n\n  <div *ngIf=\"errorFlag\"\n       class=\"alert alert-danger\">\n    {{errorMsg}}\n  </div>\n\n  <h1>Critic Login</h1>\n\n  <form (ngSubmit) = \"login()\" #f=\"ngForm\">\n\n    <div class=\"form-group\">\n      <input placeholder=\"username\"\n             name=\"username\"\n             type=\"text\"\n             class=\"form-control\"\n             ngModel\n             required\n             #username=\"ngModel\" />\n      <span class=\"help-block\" *ngIf=\"!username.valid && username.touched\">\n      Please enter username!\n      </span>\n    </div>\n\n    <div class=\"form-group\">\n      <input placeholder=\"password\"\n             name=\"password\"\n             type=\"password\"\n             class=\"form-control\"\n             ngModel\n             required\n             #password=\"ngModel\" />\n      <span class=\"help-block\" *ngIf=\"!password.valid && password.touched\">\n      Please enter password!\n      </span>\n    </div>\n\n    <button class=\"btn btn-primary btn-block\"\n            type=\"submit\"\n            [disabled]=\"!f.valid\" >Login</button>\n\n    <button class=\"btn btn-success btn-block\"\n            (click)=\"register()\">Register</button>\n\n    <button class=\"btn btn-success btn-block\"\n            (click)=\"home()\">Home</button>\n\n  </form>\n\n</div>\n"
+module.exports = "<div class=\"container\">\r\n\r\n  <div *ngIf=\"errorFlag\"\r\n       class=\"alert alert-danger\">\r\n    {{errorMsg}}\r\n  </div>\r\n\r\n  <h1>Critic Login</h1>\r\n\r\n  <form (ngSubmit) = \"login()\" #f=\"ngForm\">\r\n\r\n    <div class=\"form-group\">\r\n      <input placeholder=\"username\"\r\n             name=\"username\"\r\n             type=\"text\"\r\n             class=\"form-control\"\r\n             ngModel\r\n             required\r\n             #username=\"ngModel\" />\r\n      <span class=\"help-block\" *ngIf=\"!username.valid && username.touched\">\r\n      Please enter username!\r\n      </span>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <input placeholder=\"password\"\r\n             name=\"password\"\r\n             type=\"password\"\r\n             class=\"form-control\"\r\n             ngModel\r\n             required\r\n             #password=\"ngModel\" />\r\n      <span class=\"help-block\" *ngIf=\"!password.valid && password.touched\">\r\n      Please enter password!\r\n      </span>\r\n    </div>\r\n\r\n    <button class=\"btn btn-primary btn-block\"\r\n            type=\"submit\"\r\n            [disabled]=\"!f.valid\" >Login</button>\r\n\r\n    <button class=\"btn btn-success btn-block\"\r\n            (click)=\"register()\">Register</button>\r\n\r\n    <button class=\"btn btn-success btn-block\"\r\n            (click)=\"home()\">Home</button>\r\n\r\n  </form>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1581,12 +1585,12 @@ module.exports = "<div class=\"container\">\n\n  <div *ngIf=\"errorFlag\"\n     
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CriticLoginComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_critic_service_client__ = __webpack_require__("../../../../../src/app/services/critic.service.client.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_shared_service_client__ = __webpack_require__("../../../../../src/app/services/shared.service.client.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CriticLoginComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1633,16 +1637,16 @@ var CriticLoginComponent = (function () {
     return CriticLoginComponent;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_15" /* ViewChild */])('f'),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ViewChild */])('f'),
     __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* NgForm */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* NgForm */]) === "function" && _a || Object)
 ], CriticLoginComponent.prototype, "loginForm", void 0);
 CriticLoginComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-critic-login',
         template: __webpack_require__("../../../../../src/app/components/critic/critic-login/critic-login.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/critic/critic-login/critic-login.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_critic_service_client__["a" /* CriticService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_critic_service_client__["a" /* CriticService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__services_shared_service_client__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_shared_service_client__["a" /* SharedService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_critic_service_client__["a" /* CriticService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_critic_service_client__["a" /* CriticService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__services_shared_service_client__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_shared_service_client__["a" /* SharedService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _d || Object])
 ], CriticLoginComponent);
 
 var _a, _b, _c, _d;
@@ -1671,7 +1675,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/critic/critic-profile/critic-profile.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div class=\"container-fluid\">\n\n    <!--heading on the nav bar-->\n    <p class=\"navbar-header pull-left\">\n      <a class=\"navbar-brand thick\">\n        <b>{{username}}'s Profile</b>\n      </a>\n    </p>\n\n    <!--logout-->\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"logout()\"  class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-off\"></span>\n      </a>\n    </p>\n\n  </div>\n</nav>\n\n<div class=\"container\">\n  <img width=\"10%\" [src]=\"url | safe\">\n  <a (click)=\"flickr()\"  class=\"navbar-link\">\n    <b>Change Profile Picture!</b>\n  </a>\n\n  <ul class=\"list-group\">\n    <li class=\"list-group-item\">\n      <a (click)=\"account()\"  class=\"navbar-link\">\n        <b>Account</b>\n      </a>\n    </li>\n\n    <li class=\"list-group-item\">\n      <a (click)=\"review()\"  class=\"navbar-link\">\n        <b>Reviews</b>\n      </a>\n    </li>\n\n    <li class=\"list-group-item\">\n      <a (click)=\"search()\"  class=\"navbar-link\">\n        <b>Check out your favorite Comics!</b>\n      </a>\n    </li>\n  </ul>\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <!--heading on the nav bar-->\r\n    <p class=\"navbar-header pull-left\">\r\n      <a class=\"navbar-brand thick\">\r\n        <b>{{username}}'s Profile</b>\r\n      </a>\r\n    </p>\r\n\r\n    <!--logout-->\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"logout()\"  class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-off\"></span>\r\n      </a>\r\n    </p>\r\n\r\n  </div>\r\n</nav>\r\n\r\n<div class=\"container\">\r\n  <img width=\"10%\" [src]=\"url | safe\">\r\n  <a (click)=\"flickr()\"  class=\"navbar-link\">\r\n    <b>Change Profile Picture!</b>\r\n  </a>\r\n\r\n  <ul class=\"list-group\">\r\n    <li class=\"list-group-item\">\r\n      <a (click)=\"account()\"  class=\"navbar-link\">\r\n        <b>Account</b>\r\n      </a>\r\n    </li>\r\n\r\n    <li class=\"list-group-item\">\r\n      <a (click)=\"review()\"  class=\"navbar-link\">\r\n        <b>Reviews</b>\r\n      </a>\r\n    </li>\r\n\r\n    <li class=\"list-group-item\">\r\n      <a (click)=\"search()\"  class=\"navbar-link\">\r\n        <b>Check out your favorite Comics!</b>\r\n      </a>\r\n    </li>\r\n  </ul>\r\n</div>\r\n\r\n<!-- Footer -->\r\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\r\n  <div class=\"container-fluid\">\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"profile()\" class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-user\"></span>\r\n      </a>\r\n    </p>\r\n  </div>\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -1679,11 +1683,11 @@ module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CriticProfileComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_critic_service_client__ = __webpack_require__("../../../../../src/app/services/critic.service.client.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__ = __webpack_require__("../../../../../src/app/services/shared.service.client.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CriticProfileComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1753,12 +1757,12 @@ var CriticProfileComponent = (function () {
     return CriticProfileComponent;
 }());
 CriticProfileComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-critic-profile',
         template: __webpack_require__("../../../../../src/app/components/critic/critic-profile/critic-profile.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/critic/critic-profile/critic-profile.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__["a" /* SharedService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_critic_service_client__["a" /* CriticService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_critic_service_client__["a" /* CriticService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__["a" /* SharedService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_critic_service_client__["a" /* CriticService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_critic_service_client__["a" /* CriticService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* ActivatedRoute */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _d || Object])
 ], CriticProfileComponent);
 
 var _a, _b, _c, _d;
@@ -1787,7 +1791,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/critic/review/review-create/review-create.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div class=\"container-fluid\">\n\n    <!--heading on the nav bar-->\n    <p class=\"navbar-header pull-left\">\n      <a class=\"navbar-brand thick\">\n        <b>Create Review</b>\n      </a>\n    </p>\n\n    <!--cross-->\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"reviews()\"  class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-remove\"></span>\n      </a>\n    </p>\n\n  </div>\n</nav>\n\n<div class=\"container\">\n<form #f=\"ngForm\">\n\n  <div class=\"form-group\">\n    <label for=\"review\">Review URL</label>\n    <input type=\"text\"\n           class=\"form-control\"\n           id=\"review\"\n           name=\"review\"\n           ngModel\n           required\n           #review=\"ngModel\" >\n    <span class=\"help-block\" *ngIf=\"!review.valid && review.touched\">\n        Please enter review url!\n        </span>\n  </div>\n\n  <button class=\"btn btn-success btn-block\"\n          (click)=\"create()\">Create</button>\n\n</form>\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <!--heading on the nav bar-->\r\n    <p class=\"navbar-header pull-left\">\r\n      <a class=\"navbar-brand thick\">\r\n        <b>Create Review</b>\r\n      </a>\r\n    </p>\r\n\r\n    <!--cross-->\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"reviews()\"  class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-remove\"></span>\r\n      </a>\r\n    </p>\r\n\r\n  </div>\r\n</nav>\r\n\r\n<div class=\"container\">\r\n<form #f=\"ngForm\">\r\n\r\n  <div class=\"form-group\">\r\n    <label for=\"review\">Review URL</label>\r\n    <input type=\"text\"\r\n           class=\"form-control\"\r\n           id=\"review\"\r\n           name=\"review\"\r\n           ngModel\r\n           required\r\n           #review=\"ngModel\" >\r\n    <span class=\"help-block\" *ngIf=\"!review.valid && review.touched\">\r\n        Please enter review url!\r\n        </span>\r\n  </div>\r\n\r\n  <button class=\"btn btn-success btn-block\"\r\n          (click)=\"create()\">Create</button>\r\n\r\n</form>\r\n</div>\r\n\r\n<!-- Footer -->\r\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\r\n  <div class=\"container-fluid\">\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"profile()\" class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-user\"></span>\r\n      </a>\r\n    </p>\r\n  </div>\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -1795,11 +1799,11 @@ module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReviewCreateComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_review_service_client__ = __webpack_require__("../../../../../src/app/services/review.service.client.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReviewCreateComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1843,16 +1847,16 @@ var ReviewCreateComponent = (function () {
     return ReviewCreateComponent;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_15" /* ViewChild */])('f'),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ViewChild */])('f'),
     __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* NgForm */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* NgForm */]) === "function" && _a || Object)
 ], ReviewCreateComponent.prototype, "newWebsiteForm", void 0);
 ReviewCreateComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-review-create',
         template: __webpack_require__("../../../../../src/app/components/critic/review/review-create/review-create.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/critic/review/review-create/review-create.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_review_service_client__["a" /* ReviewService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_review_service_client__["a" /* ReviewService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_review_service_client__["a" /* ReviewService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_review_service_client__["a" /* ReviewService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _d || Object])
 ], ReviewCreateComponent);
 
 var _a, _b, _c, _d;
@@ -1881,7 +1885,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/critic/review/review-edit/review-edit.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div class=\"container-fluid\">\n\n    <!--heading on the nav bar-->\n    <p class=\"navbar-header pull-left\">\n      <a class=\"navbar-brand thick\">\n        <b>Edit Review</b>\n      </a>\n    </p>\n\n    <!--cancel-->\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"reviews()\"  class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-remove\"></span>\n      </a>\n    </p>\n\n  </div>\n</nav>\n\n<div class=\"container\">\n  <form>\n\n    <div class=\"form-group\">\n      <label for=\"url\">Review URL</label>\n      <input [(ngModel)]=\"url\" name=\"url\" type=\"text\" class=\"form-control\" id=\"url\" >\n    </div>\n\n    <button class=\"btn btn-success btn-block\"\n            (click)=\"edit()\">Edit</button>\n\n    <button class=\"btn btn-danger btn-block\"\n            (click)=\"deleteReview()\">Delete</button>\n\n  </form>\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <!--heading on the nav bar-->\r\n    <p class=\"navbar-header pull-left\">\r\n      <a class=\"navbar-brand thick\">\r\n        <b>Edit Review</b>\r\n      </a>\r\n    </p>\r\n\r\n    <!--cancel-->\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"reviews()\"  class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-remove\"></span>\r\n      </a>\r\n    </p>\r\n\r\n  </div>\r\n</nav>\r\n\r\n<div class=\"container\">\r\n  <form>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"url\">Review URL</label>\r\n      <input [(ngModel)]=\"url\" name=\"url\" type=\"text\" class=\"form-control\" id=\"url\" >\r\n    </div>\r\n\r\n    <button class=\"btn btn-success btn-block\"\r\n            (click)=\"edit()\">Edit</button>\r\n\r\n    <button class=\"btn btn-danger btn-block\"\r\n            (click)=\"deleteReview()\">Delete</button>\r\n\r\n  </form>\r\n</div>\r\n\r\n<!-- Footer -->\r\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\r\n  <div class=\"container-fluid\">\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"profile()\" class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-user\"></span>\r\n      </a>\r\n    </p>\r\n  </div>\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -1889,10 +1893,10 @@ module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReviewEditComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_review_service_client__ = __webpack_require__("../../../../../src/app/services/review.service.client.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReviewEditComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1946,12 +1950,12 @@ var ReviewEditComponent = (function () {
     return ReviewEditComponent;
 }());
 ReviewEditComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-review-edit',
         template: __webpack_require__("../../../../../src/app/components/critic/review/review-edit/review-edit.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/critic/review/review-edit/review-edit.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_review_service_client__["a" /* ReviewService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_review_service_client__["a" /* ReviewService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_review_service_client__["a" /* ReviewService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_review_service_client__["a" /* ReviewService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _c || Object])
 ], ReviewEditComponent);
 
 var _a, _b, _c;
@@ -1980,7 +1984,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/critic/review/review-list/review-list.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div class=\"container-fluid\">\n\n    <!--heading on the nav bar-->\n    <p class=\"navbar-header pull-left\">\n      <a class=\"navbar-brand thick\">\n        <b>Reviews</b>\n      </a>\n    </p>\n\n    <!--create-->\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"create()\"  class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-plus\"></span>\n      </a>\n    </p>\n\n  </div>\n</nav>\n\n  <ul class=\"list-group\">\n        <li *ngFor=\"let review of reviews\" class=\"list-group-item li-border-true rounded\">\n          <a (click)=\"edit(review)\">\n            <img [src]=\"review.url | safe\">\n          </a>\n        </li>\n  </ul>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <!--heading on the nav bar-->\r\n    <p class=\"navbar-header pull-left\">\r\n      <a class=\"navbar-brand thick\">\r\n        <b>Reviews</b>\r\n      </a>\r\n    </p>\r\n\r\n    <!--create-->\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"create()\"  class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-plus\"></span>\r\n      </a>\r\n    </p>\r\n\r\n  </div>\r\n</nav>\r\n\r\n  <ul class=\"list-group\">\r\n        <li *ngFor=\"let review of reviews\" class=\"list-group-item li-border-true rounded\">\r\n          <a (click)=\"edit(review)\">\r\n            <img [src]=\"review.url | safe\">\r\n          </a>\r\n        </li>\r\n  </ul>\r\n\r\n<!-- Footer -->\r\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\r\n  <div class=\"container-fluid\">\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"profile()\" class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-user\"></span>\r\n      </a>\r\n    </p>\r\n  </div>\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -1988,11 +1992,11 @@ module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReviewListComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_review_service_client__ = __webpack_require__("../../../../../src/app/services/review.service.client.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__ = __webpack_require__("../../../../../src/app/services/shared.service.client.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReviewListComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2037,12 +2041,12 @@ var ReviewListComponent = (function () {
     return ReviewListComponent;
 }());
 ReviewListComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-review-list',
         template: __webpack_require__("../../../../../src/app/components/critic/review/review-list/review-list.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/critic/review/review-list/review-list.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__["a" /* SharedService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_review_service_client__["a" /* ReviewService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_review_service_client__["a" /* ReviewService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_shared_service_client__["a" /* SharedService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_review_service_client__["a" /* ReviewService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_review_service_client__["a" /* ReviewService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _d || Object])
 ], ReviewListComponent);
 
 var _a, _b, _c, _d;
@@ -2071,7 +2075,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/flickr/flickr.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n\n<h1>Flickr</h1>\n\n<label>Search Image</label>\n<input [(ngModel)]=\"image\"\n       placeholder=\"enter image\"\n       class=\"form-control\" />\n<button (click)=\"searchImage(image)\"\n        class=\"btn btn-primary btn-block\">\n  Search\n</button>\n\n<ul class=\"list-group\">\n  <li class=\"list-group-item\" *ngFor=\"let photo of result.photos.photo\">\n    <a (click)=\"selectImage(photo)\">\n      <img src=\"https://farm{{photo.farm}}.staticflickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}_s.jpg\">\n    </a>\n  </li>\n</ul>\n\n</div>\n"
+module.exports = "<div class=\"container\">\r\n\r\n<h1>Flickr</h1>\r\n\r\n<label>Search Image</label>\r\n<input [(ngModel)]=\"image\"\r\n       placeholder=\"enter image\"\r\n       class=\"form-control\" />\r\n<button (click)=\"searchImage(image)\"\r\n        class=\"btn btn-primary btn-block\">\r\n  Search\r\n</button>\r\n\r\n<ul class=\"list-group\">\r\n  <li class=\"list-group-item\" *ngFor=\"let photo of result.photos.photo\">\r\n    <a (click)=\"selectImage(photo)\">\r\n      <img src=\"https://farm{{photo.farm}}.staticflickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}_s.jpg\">\r\n    </a>\r\n  </li>\r\n</ul>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -2079,12 +2083,12 @@ module.exports = "<div class=\"container\">\n\n<h1>Flickr</h1>\n\n<label>Search 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FlickrComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_flickr_service_client__ = __webpack_require__("../../../../../src/app/services/flickr.service.client.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_critic_service_client__ = __webpack_require__("../../../../../src/app/services/critic.service.client.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_comedian_service_client__ = __webpack_require__("../../../../../src/app/services/comedian.service.client.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FlickrComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2169,12 +2173,12 @@ var FlickrComponent = (function () {
     return FlickrComponent;
 }());
 FlickrComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-flickr',
         template: __webpack_require__("../../../../../src/app/components/flickr/flickr.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/flickr/flickr.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_flickr_service_client__["a" /* FlickrService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_flickr_service_client__["a" /* FlickrService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_critic_service_client__["a" /* CriticService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_critic_service_client__["a" /* CriticService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__services_comedian_service_client__["a" /* ComedianService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_comedian_service_client__["a" /* ComedianService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _e || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_flickr_service_client__["a" /* FlickrService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_flickr_service_client__["a" /* FlickrService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_critic_service_client__["a" /* CriticService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_critic_service_client__["a" /* CriticService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__services_comedian_service_client__["a" /* ComedianService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_comedian_service_client__["a" /* ComedianService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _e || Object])
 ], FlickrComponent);
 
 var _a, _b, _c, _d, _e;
@@ -2203,7 +2207,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class=\"container\">\n\n  <h1>\n    Angular 4 MEAN stack app\n  </h1>\n\n\n  <h3>\n    App works\n  </h3>\n\n\n  <h4>\n    <a [routerLink]=\"['test']\">Test MongoDB</a>\n  </h4>\n\n  <h3>\n    <a [routerLink]=\"['home']\">Home</a>\n  </h3>\n\n</div>\n\n"
+module.exports = "\r\n<div class=\"container\">\r\n\r\n  <h1>\r\n    Angular 4 MEAN stack app\r\n  </h1>\r\n\r\n\r\n  <h3>\r\n    App works\r\n  </h3>\r\n\r\n\r\n  <h4>\r\n    <a [routerLink]=\"['test']\">Test MongoDB</a>\r\n  </h4>\r\n\r\n  <h3>\r\n    <a [routerLink]=\"['home']\">Home</a>\r\n  </h3>\r\n\r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -2211,8 +2215,8 @@ module.exports = "\n<div class=\"container\">\n\n  <h1>\n    Angular 4 MEAN stac
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2231,7 +2235,7 @@ var HomeComponent = (function () {
     return HomeComponent;
 }());
 HomeComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-home',
         template: __webpack_require__("../../../../../src/app/components/home/home.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/home/home.component.css")]
@@ -2247,9 +2251,9 @@ HomeComponent = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SafePipe; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SafePipe; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2271,8 +2275,8 @@ var SafePipe = (function () {
     return SafePipe;
 }());
 SafePipe = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* Pipe */])({ name: 'safe' }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["c" /* DomSanitizer */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["c" /* DomSanitizer */]) === "function" && _a || Object])
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* Pipe */])({ name: 'safe' }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["b" /* DomSanitizer */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["b" /* DomSanitizer */]) === "function" && _a || Object])
 ], SafePipe);
 
 var _a;
@@ -2301,7 +2305,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/search/search.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n\n  <h1>Search</h1>\n\n  <label>Search Comedian</label>\n  <input [(ngModel)]=\"username\"\n         placeholder=\"enter username\"\n         class=\"form-control\" />\n  <button (click)=\"searchComedian(username)\"\n          class=\"btn btn-primary btn-block\">\n    Search\n  </button>\n\n  <ul class=\"list-group\">\n    <li class=\"list-group-item\">\n      <a (click)=\"selectComedian(result)\">\n        <img width=\"10%\" [src]=\"result.url | safe\">\n        <b>{{result.username}}</b>\n      </a>\n    </li>\n  </ul>\n\n</div>\n"
+module.exports = "<div class=\"container\">\r\n\r\n  <h1>Search</h1>\r\n\r\n  <label>Search Comedian</label>\r\n  <input [(ngModel)]=\"username\"\r\n         placeholder=\"enter username\"\r\n         class=\"form-control\" />\r\n  <button (click)=\"searchComedian(username)\"\r\n          class=\"btn btn-primary btn-block\">\r\n    Search\r\n  </button>\r\n\r\n  <ul class=\"list-group\">\r\n    <li class=\"list-group-item\">\r\n      <a (click)=\"selectComedian(result)\">\r\n        <img width=\"10%\" [src]=\"result.url | safe\">\r\n        <b>{{result.username}}</b>\r\n      </a>\r\n    </li>\r\n  </ul>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -2309,10 +2313,10 @@ module.exports = "<div class=\"container\">\n\n  <h1>Search</h1>\n\n  <label>Sea
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_comedian_service_client__ = __webpack_require__("../../../../../src/app/services/comedian.service.client.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2346,12 +2350,12 @@ var SearchComponent = (function () {
     return SearchComponent;
 }());
 SearchComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-search',
         template: __webpack_require__("../../../../../src/app/components/search/search.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/search/search.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_comedian_service_client__["a" /* ComedianService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_comedian_service_client__["a" /* ComedianService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_comedian_service_client__["a" /* ComedianService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_comedian_service_client__["a" /* ComedianService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _c || Object])
 ], SearchComponent);
 
 var _a, _b, _c;
@@ -2380,7 +2384,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/test/test.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class=\"container\">\n\n  <h1>Test</h1>\n\n  <div *ngIf=\"alertMessage\"\n       class=\"alert alert-danger\">\n    \"Failed to create\"\n  </div>\n\n  <div *ngIf=\"successMessage\"\n       class=\"alert alert-success\">\n    \"Succesfully created/deleted\"\n  </div>\n\n  <table class=\"table\">\n    <thead>\n    <tr>\n      <th>Test Message</th>\n      <th>&nbsp;</th>\n    </tr>\n\n\n    <tr>\n      <td>\n        <input [(ngModel)]=\"message\"\n               placeholder=\"message\"\n               class=\"form-control\"/>\n      </td>\n\n\n      <td>\n        <button (click)=\"createMessage()\"\n                class=\"btn btn-primary pull-right\">\n          <span class=\"glyphicon glyphicon-plus\"></span>\n        </button>\n      </td>\n    </tr>\n    </thead>\n\n\n    <tbody>\n    <tr *ngFor=\"let message of messages\">\n      <td>\n        {{message.message}}\n      </td>\n      <td>\n        <button (click)=\"deleteMessage(message._id)\"\n                class=\"btn btn-danger pull-right\">\n          <span class=\"glyphicon glyphicon-remove\"></span>\n        </button>\n      </td>\n    </tr>\n    </tbody>\n  </table>\n\n</div>\n\n\n"
+module.exports = "\r\n<div class=\"container\">\r\n\r\n  <h1>Test</h1>\r\n\r\n  <div *ngIf=\"alertMessage\"\r\n       class=\"alert alert-danger\">\r\n    \"Failed to create\"\r\n  </div>\r\n\r\n  <div *ngIf=\"successMessage\"\r\n       class=\"alert alert-success\">\r\n    \"Succesfully created/deleted\"\r\n  </div>\r\n\r\n  <table class=\"table\">\r\n    <thead>\r\n    <tr>\r\n      <th>Test Message</th>\r\n      <th>&nbsp;</th>\r\n    </tr>\r\n\r\n\r\n    <tr>\r\n      <td>\r\n        <input [(ngModel)]=\"message\"\r\n               placeholder=\"message\"\r\n               class=\"form-control\"/>\r\n      </td>\r\n\r\n\r\n      <td>\r\n        <button (click)=\"createMessage()\"\r\n                class=\"btn btn-primary pull-right\">\r\n          <span class=\"glyphicon glyphicon-plus\"></span>\r\n        </button>\r\n      </td>\r\n    </tr>\r\n    </thead>\r\n\r\n\r\n    <tbody>\r\n    <tr *ngFor=\"let message of messages\">\r\n      <td>\r\n        {{message.message}}\r\n      </td>\r\n      <td>\r\n        <button (click)=\"deleteMessage(message._id)\"\r\n                class=\"btn btn-danger pull-right\">\r\n          <span class=\"glyphicon glyphicon-remove\"></span>\r\n        </button>\r\n      </td>\r\n    </tr>\r\n    </tbody>\r\n  </table>\r\n\r\n</div>\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -2388,9 +2392,9 @@ module.exports = "\n<div class=\"container\">\n\n  <h1>Test</h1>\n\n  <div *ngIf
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TestComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_test_service_client__ = __webpack_require__("../../../../../src/app/services/test.service.client.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TestComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2439,7 +2443,7 @@ var TestComponent = (function () {
     return TestComponent;
 }());
 TestComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-test',
         template: __webpack_require__("../../../../../src/app/components/test/test.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/test/test.component.css")]
@@ -2456,12 +2460,12 @@ var _a;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BitService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Rx__ = __webpack_require__("../../../../rxjs/Rx.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Rx__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BitService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2514,8 +2518,8 @@ var BitService = (function () {
     return BitService;
 }());
 BitService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]) === "function" && _a || Object])
 ], BitService);
 
 var _a;
@@ -2527,6 +2531,7 @@ var _a;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComedianService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Rx__ = __webpack_require__("../../../../rxjs/Rx.js");
@@ -2534,7 +2539,6 @@ var _a;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_service_client__ = __webpack_require__("../../../../../src/app/services/shared.service.client.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComedianService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2636,8 +2640,8 @@ var ComedianService = (function () {
     return ComedianService;
 }());
 ComedianService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5__shared_service_client__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__shared_service_client__["a" /* SharedService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */]) === "function" && _c || Object])
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5__shared_service_client__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__shared_service_client__["a" /* SharedService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */]) === "function" && _c || Object])
 ], ComedianService);
 
 var _a, _b, _c;
@@ -2649,6 +2653,7 @@ var _a, _b, _c;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CriticService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Rx__ = __webpack_require__("../../../../rxjs/Rx.js");
@@ -2656,7 +2661,6 @@ var _a, _b, _c;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_service_client__ = __webpack_require__("../../../../../src/app/services/shared.service.client.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CriticService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2758,8 +2762,8 @@ var CriticService = (function () {
     return CriticService;
 }());
 CriticService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5__shared_service_client__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__shared_service_client__["a" /* SharedService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */]) === "function" && _c || Object])
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5__shared_service_client__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__shared_service_client__["a" /* SharedService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */]) === "function" && _c || Object])
 ], CriticService);
 
 var _a, _b, _c;
@@ -2771,11 +2775,11 @@ var _a, _b, _c;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FlickrService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Rx__ = __webpack_require__("../../../../rxjs/Rx.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Rx__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FlickrService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2804,8 +2808,8 @@ var FlickrService = (function () {
     return FlickrService;
 }());
 FlickrService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]) === "function" && _a || Object])
 ], FlickrService);
 
 var _a;
@@ -2817,12 +2821,12 @@ var _a;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReviewService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Rx__ = __webpack_require__("../../../../rxjs/Rx.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Rx__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReviewService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2875,8 +2879,8 @@ var ReviewService = (function () {
     return ReviewService;
 }());
 ReviewService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]) === "function" && _a || Object])
 ], ReviewService);
 
 var _a;
@@ -2888,8 +2892,8 @@ var _a;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SharedService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2904,7 +2908,7 @@ var SharedService = (function () {
     return SharedService;
 }());
 SharedService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])()
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])()
 ], SharedService);
 
 //# sourceMappingURL=shared.service.client.js.map
@@ -2915,12 +2919,12 @@ SharedService = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TestService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Rx__ = __webpack_require__("../../../../rxjs/Rx.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Rx__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TestService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2967,8 +2971,8 @@ var TestService = (function () {
     return TestService;
 }());
 TestService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]) === "function" && _a || Object])
 ], TestService);
 
 var _a;
@@ -2981,14 +2985,9 @@ var _a;
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
-// The file contents for the current environment will overwrite these during build.
-// The build system defaults to the dev environment which uses `environment.ts`, but if you do
-// `ng build --env=prod` then `environment.prod.ts` will be used instead.
-// The list of which env maps to which file can be found in `.angular-cli.json`.
-// The file contents for the current environment will overwrite these during build.
 var environment = {
-    production: false,
-    baseUrl: 'http://localhost:3100'
+    production: true,
+    baseUrl: ''
 };
 //# sourceMappingURL=environment.js.map
 
@@ -3008,9 +3007,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* enableProdMode */])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_23" /* enableProdMode */])();
 }
-__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */]);
+Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */]);
 //# sourceMappingURL=main.js.map
 
 /***/ }),
