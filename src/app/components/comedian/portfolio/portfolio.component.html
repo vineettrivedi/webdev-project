@@ -1,0 +1,33 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+
+    <!--heading on the nav bar-->
+    <p class="navbar-header pull-left">
+      <a class="navbar-brand thick">
+        <b>Portfolio</b>
+      </a>
+    </p>
+
+  </div>
+</nav>
+
+<div class="container">
+
+  <ul class="list-group">
+    <li *ngFor="let bit of bits" class="list-group-item li-border-true rounded">
+      <div [ngSwitch]="bit.type">
+        <div *ngSwitchCase="'IMAGE'">
+          <img width="100%" [src]="bit.url | safe">
+        </div>
+        <div class="yt-container" *ngSwitchCase="'VIDEO'">
+          <iframe [src]="bit.url | safe" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+</div>
+
+<!-- Footer -->
+<nav class="navbar navbar-default navbar-fixed-bottom">
+</nav>

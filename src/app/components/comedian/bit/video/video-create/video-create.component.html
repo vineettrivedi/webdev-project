@@ -1,0 +1,53 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+
+    <!--heading on the nav bar-->
+    <p class="navbar-header pull-left">
+      <a class="navbar-brand thick">
+        <b>Create Video</b>
+      </a>
+    </p>
+
+    <!--cross-->
+    <p class="navbar-text pull-right">
+      <a (click)="videos()"  class="navbar-link">
+        <span class="glyphicon glyphicon-remove"></span>
+      </a>
+    </p>
+
+  </div>
+</nav>
+
+<div class="container">
+  <form #f="ngForm">
+
+    <div class="form-group">
+      <label for="url">Video URL</label>
+      <input type="text"
+             class="form-control"
+             id="url"
+             name="url"
+             ngModel
+             required
+             #url="ngModel" >
+      <span class="help-block" *ngIf="!url.valid && url.touched">
+        Please enter video url!
+        </span>
+    </div>
+
+    <button class="btn btn-success btn-block"
+            (click)="create()">Create</button>
+
+  </form>
+</div>
+
+<!-- Footer -->
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <p class="navbar-text pull-right">
+      <a (click)="profile()" class="navbar-link">
+        <span class="glyphicon glyphicon-user"></span>
+      </a>
+    </p>
+  </div>
+</nav>

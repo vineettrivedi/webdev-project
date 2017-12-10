@@ -1,0 +1,42 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+
+    <!--heading on the nav bar-->
+    <p class="navbar-header pull-left">
+      <a class="navbar-brand thick">
+        <b>Images</b>
+      </a>
+    </p>
+
+    <!--create-->
+    <p class="navbar-text pull-right">
+      <a (click)="create()"  class="navbar-link">
+        <span class="glyphicon glyphicon-plus"></span>
+      </a>
+    </p>
+
+  </div>
+</nav>
+
+<div class="container">
+
+  <ul class="list-group">
+    <li *ngFor="let image of images" class="list-group-item li-border-true rounded">
+      <a (click)="edit(image)">
+        <img width="100%" [src]="image.url | safe">
+      </a>
+    </li>
+  </ul>
+
+</div>
+
+<!-- Footer -->
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <p class="navbar-text pull-right">
+      <a (click)="profile()" class="navbar-link">
+        <span class="glyphicon glyphicon-user"></span>
+      </a>
+    </p>
+  </div>
+</nav>

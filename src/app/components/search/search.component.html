@@ -1,0 +1,23 @@
+<div class="container">
+
+  <h1>Search</h1>
+
+  <label>Search Comedian</label>
+  <input [(ngModel)]="username"
+         placeholder="enter username"
+         class="form-control" />
+  <button (click)="searchComedian(username)"
+          class="btn btn-primary btn-block">
+    Search
+  </button>
+
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a (click)="selectComedian(result)">
+        <img width="10%" [src]="result.url | safe">
+        <b>{{result.username}}</b>
+      </a>
+    </li>
+  </ul>
+
+</div>

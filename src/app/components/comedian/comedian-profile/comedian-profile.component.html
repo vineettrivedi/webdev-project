@@ -1,0 +1,69 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+
+    <!--heading on the nav bar-->
+    <p class="navbar-header pull-left">
+      <a class="navbar-brand thick">
+        <b>{{username}}'s Profile</b>
+      </a>
+    </p>
+
+    <!--logout-->
+    <p class="navbar-text pull-right">
+      <a (click)="logout()"  class="navbar-link">
+        <span class="glyphicon glyphicon-off"></span>
+      </a>
+    </p>
+
+  </div>
+</nav>
+
+<div class="container">
+  <img width="10%" [src]="url | safe">
+  <a (click)="flickr()"  class="navbar-link">
+    <b>Change Profile Picture!</b>
+  </a>
+
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a (click)="account()"  class="navbar-link">
+        <b>Account</b>
+      </a>
+    </li>
+
+    <li class="list-group-item">
+      <a (click)="portfolio()"  class="navbar-link">
+        <b>Portfolio</b>
+      </a>
+    </li>
+
+    <li class="list-group-item">
+      <a (click)="image()"  class="navbar-link">
+        <b>Images</b>
+      </a>
+    </li>
+
+    <li class="list-group-item">
+      <a (click)="video()"  class="navbar-link">
+        <b>Videos</b>
+      </a>
+    </li>
+
+    <li class="list-group-item">
+      <a (click)="search()"  class="navbar-link">
+        <b>Check out your favorite Comics!</b>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- Footer -->
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <p class="navbar-text pull-right">
+      <a (click)="profile()" class="navbar-link">
+        <span class="glyphicon glyphicon-user"></span>
+      </a>
+    </p>
+  </div>
+</nav>

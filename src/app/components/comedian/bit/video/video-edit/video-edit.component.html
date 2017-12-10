@@ -1,0 +1,47 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+
+    <!--heading on the nav bar-->
+    <p class="navbar-header pull-left">
+      <a class="navbar-brand thick">
+        <b>Edit Video</b>
+      </a>
+    </p>
+
+    <!--cancel-->
+    <p class="navbar-text pull-right">
+      <a (click)="videos()"  class="navbar-link">
+        <span class="glyphicon glyphicon-remove"></span>
+      </a>
+    </p>
+
+  </div>
+</nav>
+
+<div class="container">
+  <form>
+
+    <div class="form-group">
+      <label for="url">Video URL</label>
+      <input [(ngModel)]="url" name="url" type="text" class="form-control" id="url" >
+    </div>
+
+    <button class="btn btn-success btn-block"
+            (click)="edit()">Edit</button>
+
+    <button class="btn btn-danger btn-block"
+            (click)="deleteVideo()">Delete</button>
+
+  </form>
+</div>
+
+<!-- Footer -->
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <p class="navbar-text pull-right">
+      <a (click)="profile()" class="navbar-link">
+        <span class="glyphicon glyphicon-user"></span>
+      </a>
+    </p>
+  </div>
+</nav>

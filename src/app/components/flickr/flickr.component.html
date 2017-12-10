@@ -1,0 +1,22 @@
+<div class="container">
+
+<h1>Flickr</h1>
+
+<label>Search Image</label>
+<input [(ngModel)]="image"
+       placeholder="enter image"
+       class="form-control" />
+<button (click)="searchImage(image)"
+        class="btn btn-primary btn-block">
+  Search
+</button>
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let photo of result.photos.photo">
+    <a (click)="selectImage(photo)">
+      <img src="https://farm{{photo.farm}}.staticflickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}_s.jpg">
+    </a>
+  </li>
+</ul>
+
+</div>
