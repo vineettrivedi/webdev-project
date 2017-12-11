@@ -13,6 +13,7 @@ module.exports = function (app) {
 
   app.get("/api/comedian/", findComedian);
   app.post("/api/comedian", createComedian);
+  app.get("/api/comedian/all", findAllComedians);
   app.get("/api/comedian/:cid", findComedianById);
   app.put("/api/comedian/:cid", updateComedian);
   app.delete("/api/comedian/:cid", deleteComedian);
@@ -88,6 +89,14 @@ module.exports = function (app) {
           }
         }
       );
+  }
+
+  function findAllComedians(req, res) {
+    comedianModel
+      .findAllComedians()
+      .then(function (comedians){
+        res.json(comedians);
+      });
   }
 
   function findComedianById(req, res) {

@@ -35,6 +35,14 @@ import { ReviewService } from './services/review.service.client';
 import { FlickrService } from './services/flickr.service.client';
 import {SafePipe} from './components/safe-pipe';
 import {SharedService} from './services/shared.service.client';
+import { AdminLoginComponent } from './components/admin/admin-login/admin-login.component';
+import { AdminHomeComponent } from './components/admin/admin-home/admin-home.component';
+import { AdmincoCreateComponent } from './components/admin/admin-comedian/adminco-create/adminco-create.component';
+import { AdmincoListComponent } from './components/admin/admin-comedian/adminco-list/adminco-list.component';
+import { AdmincoEditComponent } from './components/admin/admin-comedian/adminco-edit/adminco-edit.component';
+import { AdminciEditComponent } from './components/admin/admin-critic/adminci-edit/adminci-edit.component';
+import { AdminciCreateComponent } from './components/admin/admin-critic/adminci-create/adminci-create.component';
+import { AdminciListComponent } from './components/admin/admin-critic/adminci-list/adminci-list.component';
 
 @NgModule({
   // Declare components here
@@ -62,7 +70,15 @@ import {SharedService} from './services/shared.service.client';
     VideoListComponent,
     FlickrComponent,
     SafePipe,
-    ProjectHomeComponent
+    ProjectHomeComponent,
+    AdminLoginComponent,
+    AdminHomeComponent,
+    AdmincoCreateComponent,
+    AdmincoListComponent,
+    AdmincoEditComponent,
+    AdminciEditComponent,
+    AdminciCreateComponent,
+    AdminciListComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,37 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+
+    <!--heading on the nav bar-->
+    <p class="navbar-header pull-left">
+      <a class="navbar-brand thick">
+        <b>Admin Home</b>
+      </a>
+    </p>
+
+    <!--logout-->
+    <p class="navbar-text pull-right">
+      <a (click)="logout()"  class="navbar-link">
+        <span class="glyphicon glyphicon-off"></span>
+      </a>
+    </p>
+
+  </div>
+</nav>
+
+<div class="container">
+  <button class="btn btn-success btn-block"
+          (click)="comedians()">List of all Comedians</button>
+  <button class="btn btn-success btn-block"
+          (click)="critics()">List of all Critics</button>
+</div>
+
+<!-- Footer -->
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <p class="navbar-text pull-right">
+      <a (click)="profile()" class="navbar-link">
+        <span class="glyphicon glyphicon-user"></span>
+      </a>
+    </p>
+  </div>
+</nav>

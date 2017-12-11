@@ -66,6 +66,15 @@ export class ComedianService {
       );
   }
 
+  findAllComedians() {
+    return this._http.get(this.baseUrl + '/api/comedian/all')
+      .map(
+        (res: Response) => {
+          return res.json();
+        }
+      );
+  }
+
   createComedian(comedian: any) {
     return this._http.post(this.baseUrl + '/api/comedian', comedian)
       .map(
@@ -112,7 +121,12 @@ export class ComedianService {
   }
 
   deleteComedian(comedianId: string) {
-    this._http.delete(this.baseUrl + '/api/comedian/' + comedianId);
+    return this._http.delete(this.baseUrl + '/api/comedian/' + comedianId)
+      .map(
+        (res: Response) => {
+          return;
+        }
+      );
   }
 
 }

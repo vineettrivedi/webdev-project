@@ -13,6 +13,7 @@ module.exports = function (app) {
 
   app.get("/api/critic/", findCritic);
   app.post("/api/critic", createCritic);
+  app.get ('/api/critic/all', findAllCritics);
   app.get("/api/critic/:crid", findCriticById);
   app.put("/api/critic/:crid", updateCritic);
   app.delete("/api/critic/:crid", deleteCritic);
@@ -88,6 +89,14 @@ module.exports = function (app) {
           }
         }
       );
+  }
+
+  function findAllCritics(req, res) {
+    criticModel
+      .findAllCritics()
+      .then(function (critics){
+        res.json(critics);
+      });
   }
 
   function findCriticById(req, res) {

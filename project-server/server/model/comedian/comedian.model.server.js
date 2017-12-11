@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const ComedianSchema = require("./comedian.schema.server.js");
 const ComedianModel = mongoose.model("ComedianModel", ComedianSchema);
+ComedianModel.findAllComedians = findAllComedians;
 ComedianModel.createComedian = createComedian;
 ComedianModel.findComedianByCredentials = findComedianByCredentials;
 ComedianModel.findComedianById = findComedianById;
@@ -8,6 +9,10 @@ ComedianModel.findComedianByUsername = findComedianByUsername;
 ComedianModel.updateComedian = updateComedian;
 ComedianModel.deleteComedian = deleteComedian;
 module.exports = ComedianModel;
+
+function findAllComedians() {
+  return ComedianModel.find();
+}
 
 function createComedian(comedian) {
   return ComedianModel.create(comedian);

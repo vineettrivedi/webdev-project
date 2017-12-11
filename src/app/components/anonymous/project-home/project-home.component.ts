@@ -24,4 +24,8 @@ export class ProjectHomeComponent implements OnInit {
   criticlogin() {
     this.router.navigate(['criticlogin']);
   }
+
+  adminlogin() {
+    this.router.navigate(['adminlogin']);
+  }
 }

@@ -2,6 +2,7 @@ import {Component, OnInit, ViewChild} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {NgForm} from '@angular/forms';
 import {ReviewService} from '../../../../services/review.service.client';
+import {ComedianService} from '../../../../services/comedian.service.client';
 
 @Component({
   selector: 'app-review-create',
@@ -14,8 +15,9 @@ export class ReviewCreateComponent implements OnInit {
 
   url: string;
   criticId: string;
+  username: string;
 
-  constructor(private reviewService: ReviewService,
+  constructor(private reviewService: ReviewService, private comedianService: ComedianService,
               private activatedRoute: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
@@ -29,10 +31,14 @@ export class ReviewCreateComponent implements OnInit {
 
   create() {
     this.url = this.newWebsiteForm.value.review;
-    this.reviewService.createReview(this.criticId, {url: this.url})
-      .subscribe((review: any) => {
-        this.router.navigate(['critic', this.criticId, 'review']);
-        });
+    this.username = this.newWebsiteForm.value.username;
+    this.comedianService.findComedianByUsername(this.username)
+      .subscribe((comedian) => {
+        this.reviewService.createReview(this.criticId, {url: this.url, portfolio: comedian._id})
+          .subscribe((review: any) => {
+            this.router.navigate(['critic', this.criticId, 'review']);
+          });
+      });
   }
 
   profile() {

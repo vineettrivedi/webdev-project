@@ -26,6 +26,14 @@ import {VideoEditComponent} from './components/comedian/bit/video/video-edit/vid
 import {FlickrComponent} from './components/flickr/flickr.component';
 import {ProjectHomeComponent} from './components/anonymous/project-home/project-home.component';
 import {HomeComponent} from './components/home/home.component';
+import {AdminLoginComponent} from './components/admin/admin-login/admin-login.component';
+import {AdminHomeComponent} from './components/admin/admin-home/admin-home.component';
+import {AdmincoListComponent} from './components/admin/admin-comedian/adminco-list/adminco-list.component';
+import {AdmincoCreateComponent} from './components/admin/admin-comedian/adminco-create/adminco-create.component';
+import {AdmincoEditComponent} from './components/admin/admin-comedian/adminco-edit/adminco-edit.component';
+import {AdminciListComponent} from './components/admin/admin-critic/adminci-list/adminci-list.component';
+import {AdminciCreateComponent} from './components/admin/admin-critic/adminci-create/adminci-create.component';
+import {AdminciEditComponent} from './components/admin/admin-critic/adminci-edit/adminci-edit.component';
 
 // cid, crid, bid, rid
 
@@ -52,6 +60,14 @@ const APP_ROUTES: Routes = [
   {path: 'critic/:crid/review', component: ReviewListComponent},
   {path: 'critic/:crid/review/create', component: ReviewCreateComponent},
   {path: 'critic/:crid/review/:rid', component: ReviewEditComponent},
+  {path: 'adminlogin', component: AdminLoginComponent},
+  {path: 'admin/home', component: AdminHomeComponent},
+  {path: 'admin/comedian', component: AdmincoListComponent},
+  {path: 'admin/comedian/create', component: AdmincoCreateComponent},
+  {path: 'admin/comedian/:cid', component: AdmincoEditComponent},
+  {path: 'admin/critic', component: AdminciListComponent},
+  {path: 'admin/critic/create', component: AdminciCreateComponent},
+  {path: 'admin/critic/:crid', component: AdminciEditComponent}
 ];
 
 // Export the routes as module providers

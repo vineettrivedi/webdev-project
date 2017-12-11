@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const CriticSchema = require("./critic.schema.server.js");
 const CriticModel = mongoose.model("CriticModel", CriticSchema);
+CriticModel.findAllCritics = findAllCritics;
 CriticModel.createCritic = createCritic;
 CriticModel.findCriticByCredentials = findCriticByCredentials;
 CriticModel.findCriticById = findCriticById;
@@ -8,6 +9,10 @@ CriticModel.findCriticByUsername = findCriticByUsername;
 CriticModel.updateCritic = updateCritic;
 CriticModel.deleteCritic = deleteCritic;
 module.exports = CriticModel;
+
+function findAllCritics() {
+  return CriticModel.find();
+}
 
 function createCritic(critic) {
   return CriticModel.create(critic);

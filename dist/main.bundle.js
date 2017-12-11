@@ -107,12 +107,28 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__services_flickr_service_client__ = __webpack_require__("../../../../../src/app/services/flickr.service.client.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__components_safe_pipe__ = __webpack_require__("../../../../../src/app/components/safe-pipe.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__services_shared_service_client__ = __webpack_require__("../../../../../src/app/services/shared.service.client.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__components_admin_admin_login_admin_login_component__ = __webpack_require__("../../../../../src/app/components/admin/admin-login/admin-login.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__components_admin_admin_home_admin_home_component__ = __webpack_require__("../../../../../src/app/components/admin/admin-home/admin-home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__components_admin_admin_comedian_adminco_create_adminco_create_component__ = __webpack_require__("../../../../../src/app/components/admin/admin-comedian/adminco-create/adminco-create.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__components_admin_admin_comedian_adminco_list_adminco_list_component__ = __webpack_require__("../../../../../src/app/components/admin/admin-comedian/adminco-list/adminco-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__components_admin_admin_comedian_adminco_edit_adminco_edit_component__ = __webpack_require__("../../../../../src/app/components/admin/admin-comedian/adminco-edit/adminco-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__components_admin_admin_critic_adminci_edit_adminci_edit_component__ = __webpack_require__("../../../../../src/app/components/admin/admin-critic/adminci-edit/adminci-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__components_admin_admin_critic_adminci_create_adminci_create_component__ = __webpack_require__("../../../../../src/app/components/admin/admin-critic/adminci-create/adminci-create.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__components_admin_admin_critic_adminci_list_adminci_list_component__ = __webpack_require__("../../../../../src/app/components/admin/admin-critic/adminci-list/adminci-list.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
+
+
+
+
 
 
 
@@ -181,7 +197,15 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_22__components_comedian_bit_video_video_list_video_list_component__["a" /* VideoListComponent */],
             __WEBPACK_IMPORTED_MODULE_10__components_flickr_flickr_component__["a" /* FlickrComponent */],
             __WEBPACK_IMPORTED_MODULE_34__components_safe_pipe__["a" /* SafePipe */],
-            __WEBPACK_IMPORTED_MODULE_11__components_anonymous_project_home_project_home_component__["a" /* ProjectHomeComponent */]
+            __WEBPACK_IMPORTED_MODULE_11__components_anonymous_project_home_project_home_component__["a" /* ProjectHomeComponent */],
+            __WEBPACK_IMPORTED_MODULE_36__components_admin_admin_login_admin_login_component__["a" /* AdminLoginComponent */],
+            __WEBPACK_IMPORTED_MODULE_37__components_admin_admin_home_admin_home_component__["a" /* AdminHomeComponent */],
+            __WEBPACK_IMPORTED_MODULE_38__components_admin_admin_comedian_adminco_create_adminco_create_component__["a" /* AdmincoCreateComponent */],
+            __WEBPACK_IMPORTED_MODULE_39__components_admin_admin_comedian_adminco_list_adminco_list_component__["a" /* AdmincoListComponent */],
+            __WEBPACK_IMPORTED_MODULE_40__components_admin_admin_comedian_adminco_edit_adminco_edit_component__["a" /* AdmincoEditComponent */],
+            __WEBPACK_IMPORTED_MODULE_41__components_admin_admin_critic_adminci_edit_adminci_edit_component__["a" /* AdminciEditComponent */],
+            __WEBPACK_IMPORTED_MODULE_42__components_admin_admin_critic_adminci_create_adminci_create_component__["a" /* AdminciCreateComponent */],
+            __WEBPACK_IMPORTED_MODULE_43__components_admin_admin_critic_adminci_list_adminci_list_component__["a" /* AdminciListComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -227,9 +251,25 @@ AppModule = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_flickr_flickr_component__ = __webpack_require__("../../../../../src/app/components/flickr/flickr.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_anonymous_project_home_project_home_component__ = __webpack_require__("../../../../../src/app/components/anonymous/project-home/project-home.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_home_home_component__ = __webpack_require__("../../../../../src/app/components/home/home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_admin_admin_login_admin_login_component__ = __webpack_require__("../../../../../src/app/components/admin/admin-login/admin-login.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_admin_admin_home_admin_home_component__ = __webpack_require__("../../../../../src/app/components/admin/admin-home/admin-home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_admin_admin_comedian_adminco_list_adminco_list_component__ = __webpack_require__("../../../../../src/app/components/admin/admin-comedian/adminco-list/adminco-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_admin_admin_comedian_adminco_create_adminco_create_component__ = __webpack_require__("../../../../../src/app/components/admin/admin-comedian/adminco-create/adminco-create.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_admin_admin_comedian_adminco_edit_adminco_edit_component__ = __webpack_require__("../../../../../src/app/components/admin/admin-comedian/adminco-edit/adminco-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_admin_admin_critic_adminci_list_adminci_list_component__ = __webpack_require__("../../../../../src/app/components/admin/admin-critic/adminci-list/adminci-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_admin_admin_critic_adminci_create_adminci_create_component__ = __webpack_require__("../../../../../src/app/components/admin/admin-critic/adminci-create/adminci-create.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__components_admin_admin_critic_adminci_edit_adminci_edit_component__ = __webpack_require__("../../../../../src/app/components/admin/admin-critic/adminci-edit/adminci-edit.component.ts");
 /**
  * Created by sesha on 7/26/17.
  */
+
+
+
+
+
+
+
+
 
 
 
@@ -277,10 +317,762 @@ var APP_ROUTES = [
     { path: 'critic/:crid/review', component: __WEBPACK_IMPORTED_MODULE_10__components_critic_review_review_list_review_list_component__["a" /* ReviewListComponent */] },
     { path: 'critic/:crid/review/create', component: __WEBPACK_IMPORTED_MODULE_12__components_critic_review_review_create_review_create_component__["a" /* ReviewCreateComponent */] },
     { path: 'critic/:crid/review/:rid', component: __WEBPACK_IMPORTED_MODULE_11__components_critic_review_review_edit_review_edit_component__["a" /* ReviewEditComponent */] },
+    { path: 'adminlogin', component: __WEBPACK_IMPORTED_MODULE_23__components_admin_admin_login_admin_login_component__["a" /* AdminLoginComponent */] },
+    { path: 'admin/home', component: __WEBPACK_IMPORTED_MODULE_24__components_admin_admin_home_admin_home_component__["a" /* AdminHomeComponent */] },
+    { path: 'admin/comedian', component: __WEBPACK_IMPORTED_MODULE_25__components_admin_admin_comedian_adminco_list_adminco_list_component__["a" /* AdmincoListComponent */] },
+    { path: 'admin/comedian/create', component: __WEBPACK_IMPORTED_MODULE_26__components_admin_admin_comedian_adminco_create_adminco_create_component__["a" /* AdmincoCreateComponent */] },
+    { path: 'admin/comedian/:cid', component: __WEBPACK_IMPORTED_MODULE_27__components_admin_admin_comedian_adminco_edit_adminco_edit_component__["a" /* AdmincoEditComponent */] },
+    { path: 'admin/critic', component: __WEBPACK_IMPORTED_MODULE_28__components_admin_admin_critic_adminci_list_adminci_list_component__["a" /* AdminciListComponent */] },
+    { path: 'admin/critic/create', component: __WEBPACK_IMPORTED_MODULE_29__components_admin_admin_critic_adminci_create_adminci_create_component__["a" /* AdminciCreateComponent */] },
+    { path: 'admin/critic/:crid', component: __WEBPACK_IMPORTED_MODULE_30__components_admin_admin_critic_adminci_edit_adminci_edit_component__["a" /* AdminciEditComponent */] }
 ];
 // Export the routes as module providers
 var Routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["c" /* RouterModule */].forRoot(APP_ROUTES);
 //# sourceMappingURL=app.routing.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/admin/admin-comedian/adminco-create/adminco-create.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/admin/admin-comedian/adminco-create/adminco-create.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div class=\"container-fluid\">\n\n    <!--heading on the nav bar-->\n    <p class=\"navbar-header pull-left\">\n      <a class=\"navbar-brand thick\">\n        <b>Create Comedian</b>\n      </a>\n    </p>\n\n    <!--cross-->\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"comedians()\"  class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-remove\"></span>\n      </a>\n    </p>\n\n  </div>\n</nav>\n\n<div class=\"container\">\n\n  <h1>Create Comedian</h1>\n\n  <form (ngSubmit) = \"create()\" #f=\"ngForm\">\n\n    <div class=\"form-group\">\n      <input placeholder=\"username\"\n             name=\"username\"\n             type=\"text\"\n             class=\"form-control\"\n             ngModel\n             required\n             #username=\"ngModel\" />\n      <span class=\"help-block\" *ngIf=\"!username.valid && username.touched\">\n      Please enter username!\n      </span>\n    </div>\n\n    <div class=\"form-group\">\n      <input placeholder=\"password\"\n             name=\"password\"\n             type=\"password\"\n             class=\"form-control\"\n             ngModel\n             required\n             #password=\"ngModel\" />\n      <span class=\"help-block\" *ngIf=\"!password.valid && password.touched\">\n      Please enter password!\n      </span>\n    </div>\n\n    <div class=\"form-group\">\n      <input placeholder=\"firstname\"\n             name=\"firstname\"\n             type=\"text\"\n             class=\"form-control\"\n             ngModel\n             required\n             #firstname=\"ngModel\" />\n      <span class=\"help-block\" *ngIf=\"!firstname.valid && firstname.touched\">\n      Please enter first name!\n      </span>\n    </div>\n\n    <div class=\"form-group\">\n      <input placeholder=\"lastname\"\n             name=\"lastname\"\n             type=\"text\"\n             class=\"form-control\"\n             ngModel\n             required\n             #lastname=\"ngModel\" />\n      <span class=\"help-block\" *ngIf=\"!lastname.valid && lastname.touched\">\n      Please enter last name!\n      </span>\n    </div>\n\n    <div class=\"form-group\">\n      <input placeholder=\"email\"\n             name=\"email\"\n             type=\"text\"\n             class=\"form-control\"\n             ngModel\n             required\n             #email=\"ngModel\" />\n      <span class=\"help-block\" *ngIf=\"!email.valid && email.touched\">\n      Please enter email!\n      </span>\n    </div>\n\n    <button class=\"btn btn-primary btn-block\"\n            type=\"submit\"\n            [disabled]=\"!f.valid\">Create</button>\n\n  </form>\n\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/admin/admin-comedian/adminco-create/adminco-create.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdmincoCreateComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_comedian_service_client__ = __webpack_require__("../../../../../src/app/services/comedian.service.client.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var AdmincoCreateComponent = (function () {
+    function AdmincoCreateComponent(comedianService, router) {
+        this.comedianService = comedianService;
+        this.router = router;
+    }
+    AdmincoCreateComponent.prototype.ngOnInit = function () {
+    };
+    AdmincoCreateComponent.prototype.create = function () {
+        var _this = this;
+        this.username = this.loginForm.value.username;
+        this.password = this.loginForm.value.password;
+        this.firstname = this.loginForm.value.firstname;
+        this.lastname = this.loginForm.value.lastname;
+        this.email = this.loginForm.value.email;
+        this.url = 'https://www.brightfind.com/images/services/design/icon-design-users.png';
+        var user = {
+            username: this.username,
+            password: this.password,
+            firstName: this.firstname,
+            lastName: this.lastname,
+            email: this.email,
+            url: this.url
+        };
+        this.comedianService.register(user)
+            .subscribe(function (comedian) {
+            _this.router.navigate(['admin', 'comedian']);
+        });
+    };
+    AdmincoCreateComponent.prototype.comedians = function () {
+        this.router.navigate(['admin', 'comedian']);
+    };
+    AdmincoCreateComponent.prototype.profile = function () {
+        this.router.navigate(['admin', 'home']);
+    };
+    return AdmincoCreateComponent;
+}());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ViewChild */])('f'),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* NgForm */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* NgForm */]) === "function" && _a || Object)
+], AdmincoCreateComponent.prototype, "loginForm", void 0);
+AdmincoCreateComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-adminco-create',
+        template: __webpack_require__("../../../../../src/app/components/admin/admin-comedian/adminco-create/adminco-create.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/components/admin/admin-comedian/adminco-create/adminco-create.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_comedian_service_client__["a" /* ComedianService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_comedian_service_client__["a" /* ComedianService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _c || Object])
+], AdmincoCreateComponent);
+
+var _a, _b, _c;
+//# sourceMappingURL=adminco-create.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/admin/admin-comedian/adminco-edit/adminco-edit.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/admin/admin-comedian/adminco-edit/adminco-edit.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div class=\"container-fluid\">\n\n    <!--heading on the nav bar-->\n    <p class=\"navbar-header pull-left\">\n      <a class=\"navbar-brand thick\">\n        <b>Edit Comedian</b>\n      </a>\n    </p>\n\n    <!--cancel mark-->\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"comedians()\"  class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-remove\"></span>\n      </a>\n    </p>\n\n  </div>\n</nav>\n\n<div class=\"container\">\n  <form>\n\n    <div class=\"form-group\">\n      <label for=\"username\">Username</label>\n      <input [(ngModel)]=\"username\" name=\"username\" type=\"text\" class=\"form-control\" id=\"username\" >\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"email\">Email address</label>\n      <input [(ngModel)]=\"email\" name=\"email\" type=\"email\" class=\"form-control\" id=\"email\" >\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"first-name\">First Name</label>\n      <input [(ngModel)]=\"firstName\" name=\"firstName\" type=\"text\" class=\"form-control\" id=\"first-name\" >\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"last-name\">Last Name</label>\n      <input [(ngModel)]=\"lastName\" name=\"lastName\" type=\"text\" class=\"form-control\" id=\"last-name\" >\n    </div>\n\n    <button class=\"btn btn-success btn-block\"\n            (click)=\"edit()\">Edit</button>\n\n    <button class=\"btn btn-danger btn-block\"\n            (click)=\"deleteComedian()\">Delete</button>\n\n  </form>\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/admin/admin-comedian/adminco-edit/adminco-edit.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdmincoEditComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_comedian_service_client__ = __webpack_require__("../../../../../src/app/services/comedian.service.client.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var AdmincoEditComponent = (function () {
+    function AdmincoEditComponent(comedianService, activatedRoute, router) {
+        this.comedianService = comedianService;
+        this.activatedRoute = activatedRoute;
+        this.router = router;
+        this.comedian = {};
+    }
+    AdmincoEditComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.activatedRoute.params
+            .subscribe(function (params) {
+            _this.comedianId = params['cid'];
+        });
+        this.comedianService.findComedianById(this.comedianId)
+            .subscribe(function (comedian) {
+            _this.comedian = comedian;
+            _this.username = _this.comedian['username'];
+            _this.password = _this.comedian['password'];
+            _this.email = _this.comedian['email'];
+            _this.firstName = _this.comedian['firstName'];
+            _this.lastName = _this.comedian['lastName'];
+            _this.url = _this.comedian['url'];
+        });
+    };
+    AdmincoEditComponent.prototype.edit = function () {
+        var _this = this;
+        this.comedianService.updateComedian(this.comedianId, { _id: this.comedianId, username: this.username,
+            password: this.password, firstName: this.firstName, lastName: this.lastName, email: this.email, url: this.url })
+            .subscribe(function (comedian) {
+            _this.router.navigate(['admin', 'comedian']);
+        });
+    };
+    AdmincoEditComponent.prototype.deleteComedian = function () {
+        var _this = this;
+        this.comedianService.deleteComedian(this.comedianId)
+            .subscribe(function () {
+            _this.router.navigate(['admin', 'comedian']);
+        });
+    };
+    AdmincoEditComponent.prototype.profile = function () {
+        this.router.navigate(['admin', 'home']);
+    };
+    AdmincoEditComponent.prototype.comedians = function () {
+        this.router.navigate(['admin', 'comedian']);
+    };
+    return AdmincoEditComponent;
+}());
+AdmincoEditComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-adminco-edit',
+        template: __webpack_require__("../../../../../src/app/components/admin/admin-comedian/adminco-edit/adminco-edit.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/components/admin/admin-comedian/adminco-edit/adminco-edit.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_comedian_service_client__["a" /* ComedianService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_comedian_service_client__["a" /* ComedianService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* ActivatedRoute */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _c || Object])
+], AdmincoEditComponent);
+
+var _a, _b, _c;
+//# sourceMappingURL=adminco-edit.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/admin/admin-comedian/adminco-list/adminco-list.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/admin/admin-comedian/adminco-list/adminco-list.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div class=\"container-fluid\">\n\n    <!--heading on the nav bar-->\n    <p class=\"navbar-header pull-left\">\n      <a class=\"navbar-brand thick\">\n        <b>Comedian List</b>\n      </a>\n    </p>\n\n    <!--create-->\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"create()\"  class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-plus\"></span>\n      </a>\n    </p>\n\n  </div>\n</nav>\n\n<div class=\"container\">\n\n  <ul class=\"list-group\">\n    <li *ngFor=\"let comedian of comedians\" class=\"list-group-item li-border-true rounded\">\n      <a (click)=\"edit(comedian)\">\n        <p><b>{{comedian.username}}</b></p>\n      </a>\n    </li>\n  </ul>\n\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/admin/admin-comedian/adminco-list/adminco-list.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdmincoListComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_comedian_service_client__ = __webpack_require__("../../../../../src/app/services/comedian.service.client.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var AdmincoListComponent = (function () {
+    function AdmincoListComponent(comedianService, router) {
+        this.comedianService = comedianService;
+        this.router = router;
+        this.comedians = [];
+    }
+    AdmincoListComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.comedianService.findAllComedians()
+            .subscribe(function (comedians) {
+            _this.comedians = comedians;
+        });
+    };
+    AdmincoListComponent.prototype.edit = function (comedian) {
+        this.router.navigate(['admin', 'comedian', comedian._id]);
+    };
+    AdmincoListComponent.prototype.create = function () {
+        this.router.navigate(['admin', 'comedian', 'create']);
+    };
+    AdmincoListComponent.prototype.profile = function () {
+        this.router.navigate(['admin', 'home']);
+    };
+    return AdmincoListComponent;
+}());
+AdmincoListComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-adminco-list',
+        template: __webpack_require__("../../../../../src/app/components/admin/admin-comedian/adminco-list/adminco-list.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/components/admin/admin-comedian/adminco-list/adminco-list.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_comedian_service_client__["a" /* ComedianService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_comedian_service_client__["a" /* ComedianService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _b || Object])
+], AdmincoListComponent);
+
+var _a, _b;
+//# sourceMappingURL=adminco-list.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/admin/admin-critic/adminci-create/adminci-create.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/admin/admin-critic/adminci-create/adminci-create.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div class=\"container-fluid\">\n\n    <!--heading on the nav bar-->\n    <p class=\"navbar-header pull-left\">\n      <a class=\"navbar-brand thick\">\n        <b>Create Critic</b>\n      </a>\n    </p>\n\n    <!--cross-->\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"critics()\"  class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-remove\"></span>\n      </a>\n    </p>\n\n  </div>\n</nav>\n\n<div class=\"container\">\n\n  <h1>Create Critic</h1>\n\n  <form (ngSubmit) = \"create()\" #f=\"ngForm\">\n\n    <div class=\"form-group\">\n      <input placeholder=\"username\"\n             name=\"username\"\n             type=\"text\"\n             class=\"form-control\"\n             ngModel\n             required\n             #username=\"ngModel\" />\n      <span class=\"help-block\" *ngIf=\"!username.valid && username.touched\">\n      Please enter username!\n      </span>\n    </div>\n\n    <div class=\"form-group\">\n      <input placeholder=\"password\"\n             name=\"password\"\n             type=\"password\"\n             class=\"form-control\"\n             ngModel\n             required\n             #password=\"ngModel\" />\n      <span class=\"help-block\" *ngIf=\"!password.valid && password.touched\">\n      Please enter password!\n      </span>\n    </div>\n\n    <div class=\"form-group\">\n      <input placeholder=\"firstname\"\n             name=\"firstname\"\n             type=\"text\"\n             class=\"form-control\"\n             ngModel\n             required\n             #firstname=\"ngModel\" />\n      <span class=\"help-block\" *ngIf=\"!firstname.valid && firstname.touched\">\n      Please enter first name!\n      </span>\n    </div>\n\n    <div class=\"form-group\">\n      <input placeholder=\"lastname\"\n             name=\"lastname\"\n             type=\"text\"\n             class=\"form-control\"\n             ngModel\n             required\n             #lastname=\"ngModel\" />\n      <span class=\"help-block\" *ngIf=\"!lastname.valid && lastname.touched\">\n      Please enter last name!\n      </span>\n    </div>\n\n    <div class=\"form-group\">\n      <input placeholder=\"email\"\n             name=\"email\"\n             type=\"text\"\n             class=\"form-control\"\n             ngModel\n             required\n             #email=\"ngModel\" />\n      <span class=\"help-block\" *ngIf=\"!email.valid && email.touched\">\n      Please enter email!\n      </span>\n    </div>\n\n    <button class=\"btn btn-primary btn-block\"\n            type=\"submit\"\n            [disabled]=\"!f.valid\">Create</button>\n\n  </form>\n\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/admin/admin-critic/adminci-create/adminci-create.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdminciCreateComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_critic_service_client__ = __webpack_require__("../../../../../src/app/services/critic.service.client.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var AdminciCreateComponent = (function () {
+    function AdminciCreateComponent(criticService, router) {
+        this.criticService = criticService;
+        this.router = router;
+    }
+    AdminciCreateComponent.prototype.ngOnInit = function () {
+    };
+    AdminciCreateComponent.prototype.create = function () {
+        var _this = this;
+        this.username = this.loginForm.value.username;
+        this.password = this.loginForm.value.password;
+        this.firstname = this.loginForm.value.firstname;
+        this.lastname = this.loginForm.value.lastname;
+        this.email = this.loginForm.value.email;
+        this.url = 'https://www.brightfind.com/images/services/design/icon-design-users.png';
+        var user = {
+            username: this.username,
+            password: this.password,
+            firstName: this.firstname,
+            lastName: this.lastname,
+            email: this.email,
+            url: this.url
+        };
+        this.criticService.register(user)
+            .subscribe(function (critic) {
+            _this.router.navigate(['admin', 'critic']);
+        });
+    };
+    AdminciCreateComponent.prototype.critics = function () {
+        this.router.navigate(['admin', 'critic']);
+    };
+    AdminciCreateComponent.prototype.profile = function () {
+        this.router.navigate(['admin', 'home']);
+    };
+    return AdminciCreateComponent;
+}());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ViewChild */])('f'),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* NgForm */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* NgForm */]) === "function" && _a || Object)
+], AdminciCreateComponent.prototype, "loginForm", void 0);
+AdminciCreateComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-adminci-create',
+        template: __webpack_require__("../../../../../src/app/components/admin/admin-critic/adminci-create/adminci-create.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/components/admin/admin-critic/adminci-create/adminci-create.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_critic_service_client__["a" /* CriticService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_critic_service_client__["a" /* CriticService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _c || Object])
+], AdminciCreateComponent);
+
+var _a, _b, _c;
+//# sourceMappingURL=adminci-create.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/admin/admin-critic/adminci-edit/adminci-edit.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/admin/admin-critic/adminci-edit/adminci-edit.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div class=\"container-fluid\">\n\n    <!--heading on the nav bar-->\n    <p class=\"navbar-header pull-left\">\n      <a class=\"navbar-brand thick\">\n        <b>Edit Critic</b>\n      </a>\n    </p>\n\n    <!--cancel mark-->\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"critics()\"  class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-remove\"></span>\n      </a>\n    </p>\n\n  </div>\n</nav>\n\n<div class=\"container\">\n  <form>\n\n    <div class=\"form-group\">\n      <label for=\"username\">Username</label>\n      <input [(ngModel)]=\"username\" name=\"username\" type=\"text\" class=\"form-control\" id=\"username\" >\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"email\">Email address</label>\n      <input [(ngModel)]=\"email\" name=\"email\" type=\"email\" class=\"form-control\" id=\"email\" >\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"first-name\">First Name</label>\n      <input [(ngModel)]=\"firstName\" name=\"firstName\" type=\"text\" class=\"form-control\" id=\"first-name\" >\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"last-name\">Last Name</label>\n      <input [(ngModel)]=\"lastName\" name=\"lastName\" type=\"text\" class=\"form-control\" id=\"last-name\" >\n    </div>\n\n    <button class=\"btn btn-success btn-block\"\n            (click)=\"edit()\">Edit</button>\n\n    <button class=\"btn btn-danger btn-block\"\n            (click)=\"deleteCritic()\">Delete</button>\n\n  </form>\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/admin/admin-critic/adminci-edit/adminci-edit.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdminciEditComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_critic_service_client__ = __webpack_require__("../../../../../src/app/services/critic.service.client.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var AdminciEditComponent = (function () {
+    function AdminciEditComponent(criticService, activatedRoute, router) {
+        this.criticService = criticService;
+        this.activatedRoute = activatedRoute;
+        this.router = router;
+        this.critic = {};
+    }
+    AdminciEditComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.activatedRoute.params
+            .subscribe(function (params) {
+            _this.criticId = params['crid'];
+        });
+        this.criticService.findCriticById(this.criticId)
+            .subscribe(function (critic) {
+            _this.critic = critic;
+            _this.username = _this.critic['username'];
+            _this.password = _this.critic['password'];
+            _this.email = _this.critic['email'];
+            _this.firstName = _this.critic['firstName'];
+            _this.lastName = _this.critic['lastName'];
+            _this.url = _this.critic['url'];
+        });
+    };
+    AdminciEditComponent.prototype.edit = function () {
+        var _this = this;
+        this.criticService.updateCritic(this.criticId, { _id: this.criticId, username: this.username,
+            password: this.password, firstName: this.firstName, lastName: this.lastName, email: this.email, url: this.url })
+            .subscribe(function (critic) {
+            _this.router.navigate(['admin', 'critic']);
+        });
+    };
+    AdminciEditComponent.prototype.deleteCritic = function () {
+        var _this = this;
+        this.criticService.deleteCritic(this.criticId)
+            .subscribe(function () {
+            _this.router.navigate(['admin', 'critic']);
+        });
+    };
+    AdminciEditComponent.prototype.profile = function () {
+        this.router.navigate(['admin', 'home']);
+    };
+    AdminciEditComponent.prototype.critics = function () {
+        this.router.navigate(['admin', 'critic']);
+    };
+    return AdminciEditComponent;
+}());
+AdminciEditComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-adminci-edit',
+        template: __webpack_require__("../../../../../src/app/components/admin/admin-critic/adminci-edit/adminci-edit.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/components/admin/admin-critic/adminci-edit/adminci-edit.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_critic_service_client__["a" /* CriticService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_critic_service_client__["a" /* CriticService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _c || Object])
+], AdminciEditComponent);
+
+var _a, _b, _c;
+//# sourceMappingURL=adminci-edit.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/admin/admin-critic/adminci-list/adminci-list.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/admin/admin-critic/adminci-list/adminci-list.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div class=\"container-fluid\">\n\n    <!--heading on the nav bar-->\n    <p class=\"navbar-header pull-left\">\n      <a class=\"navbar-brand thick\">\n        <b>Critic List</b>\n      </a>\n    </p>\n\n    <!--create-->\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"create()\"  class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-plus\"></span>\n      </a>\n    </p>\n\n  </div>\n</nav>\n\n<div class=\"container\">\n\n  <ul class=\"list-group\">\n    <li *ngFor=\"let critic of critics\" class=\"list-group-item li-border-true rounded\">\n      <a (click)=\"edit(critic)\">\n        <p><b>{{critic.username}}</b></p>\n      </a>\n    </li>\n  </ul>\n\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/admin/admin-critic/adminci-list/adminci-list.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdminciListComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_critic_service_client__ = __webpack_require__("../../../../../src/app/services/critic.service.client.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var AdminciListComponent = (function () {
+    function AdminciListComponent(criticService, router) {
+        this.criticService = criticService;
+        this.router = router;
+        this.critics = [];
+    }
+    AdminciListComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.criticService.findAllCritics()
+            .subscribe(function (critics) {
+            _this.critics = critics;
+        });
+    };
+    AdminciListComponent.prototype.edit = function (critic) {
+        this.router.navigate(['admin', 'critic', critic._id]);
+    };
+    AdminciListComponent.prototype.create = function () {
+        this.router.navigate(['admin', 'critic', 'create']);
+    };
+    AdminciListComponent.prototype.profile = function () {
+        this.router.navigate(['admin', 'home']);
+    };
+    return AdminciListComponent;
+}());
+AdminciListComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-adminci-list',
+        template: __webpack_require__("../../../../../src/app/components/admin/admin-critic/adminci-list/adminci-list.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/components/admin/admin-critic/adminci-list/adminci-list.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_critic_service_client__["a" /* CriticService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_critic_service_client__["a" /* CriticService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _b || Object])
+], AdminciListComponent);
+
+var _a, _b;
+//# sourceMappingURL=adminci-list.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/admin/admin-home/admin-home.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/admin/admin-home/admin-home.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n  <div class=\"container-fluid\">\n\n    <!--heading on the nav bar-->\n    <p class=\"navbar-header pull-left\">\n      <a class=\"navbar-brand thick\">\n        <b>Admin Home</b>\n      </a>\n    </p>\n\n    <!--logout-->\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"logout()\"  class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-off\"></span>\n      </a>\n    </p>\n\n  </div>\n</nav>\n\n<div class=\"container\">\n  <button class=\"btn btn-success btn-block\"\n          (click)=\"comedians()\">List of all Comedians</button>\n  <button class=\"btn btn-success btn-block\"\n          (click)=\"critics()\">List of all Critics</button>\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/admin/admin-home/admin-home.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdminHomeComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AdminHomeComponent = (function () {
+    function AdminHomeComponent(router) {
+        this.router = router;
+    }
+    AdminHomeComponent.prototype.ngOnInit = function () {
+    };
+    AdminHomeComponent.prototype.comedians = function () {
+        this.router.navigate(['admin', 'comedian']);
+    };
+    AdminHomeComponent.prototype.critics = function () {
+        this.router.navigate(['admin', 'critic']);
+    };
+    AdminHomeComponent.prototype.profile = function () {
+        this.router.navigate(['admin', 'home']);
+    };
+    AdminHomeComponent.prototype.logout = function () {
+        this.router.navigate(['adminlogin']);
+    };
+    return AdminHomeComponent;
+}());
+AdminHomeComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-admin-home',
+        template: __webpack_require__("../../../../../src/app/components/admin/admin-home/admin-home.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/components/admin/admin-home/admin-home.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object])
+], AdminHomeComponent);
+
+var _a;
+//# sourceMappingURL=admin-home.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/admin/admin-login/admin-login.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/admin/admin-login/admin-login.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n\n  <div *ngIf=\"errorFlag\"\n       class=\"alert alert-danger\">\n    {{errorMsg}}\n  </div>\n\n  <h1>Admin Login</h1>\n\n  <form (ngSubmit) = \"login()\" #f=\"ngForm\">\n\n    <div class=\"form-group\">\n      <input placeholder=\"username\"\n             name=\"username\"\n             type=\"text\"\n             class=\"form-control\"\n             ngModel\n             required\n             #username=\"ngModel\" />\n      <span class=\"help-block\" *ngIf=\"!username.valid && username.touched\">\n      Please enter username!\n      </span>\n    </div>\n\n    <div class=\"form-group\">\n      <input placeholder=\"password\"\n             name=\"password\"\n             type=\"password\"\n             class=\"form-control\"\n             ngModel\n             required\n             #password=\"ngModel\" />\n      <span class=\"help-block\" *ngIf=\"!password.valid && password.touched\">\n      Please enter password!\n      </span>\n    </div>\n\n    <button class=\"btn btn-primary btn-block\"\n            type=\"submit\"\n            [disabled]=\"!f.valid\" >Login</button>\n\n    <button class=\"btn btn-success btn-block\"\n            (click)=\"home()\">Home</button>\n\n  </form>\n\n</div>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/admin/admin-login/admin-login.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdminLoginComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var AdminLoginComponent = (function () {
+    function AdminLoginComponent(router) {
+        this.router = router;
+        this.errorMsg = 'Invalid username or password !';
+    }
+    AdminLoginComponent.prototype.ngOnInit = function () {
+    };
+    AdminLoginComponent.prototype.login = function () {
+        // fetching data from loginForm
+        this.username = this.loginForm.value.username;
+        this.password = this.loginForm.value.password;
+        if (this.username === 'admin' && this.password === 'admin') {
+            this.errorFlag = false;
+            this.router.navigate(['admin', 'home']);
+        }
+        else {
+            this.errorFlag = true;
+        }
+    };
+    AdminLoginComponent.prototype.home = function () {
+        this.router.navigate(['home']);
+    };
+    return AdminLoginComponent;
+}());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ViewChild */])('f'),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* NgForm */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* NgForm */]) === "function" && _a || Object)
+], AdminLoginComponent.prototype, "loginForm", void 0);
+AdminLoginComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-admin-login',
+        template: __webpack_require__("../../../../../src/app/components/admin/admin-login/admin-login.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/components/admin/admin-login/admin-login.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object])
+], AdminLoginComponent);
+
+var _a, _b;
+//# sourceMappingURL=admin-login.component.js.map
 
 /***/ }),
 
@@ -305,7 +1097,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/anonymous/project-home/project-home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n  <h1>HOME</h1>\r\n  <button class=\"btn btn-primary btn-block\"\r\n          (click)=\"register()\">Register</button>\r\n  <button class=\"btn btn-success btn-block\"\r\n          (click)=\"comedianlogin()\">Comedian Login</button>\r\n  <button class=\"btn btn-success btn-block\"\r\n          (click)=\"criticlogin()\">Critic Login</button>\r\n</div>\r\n"
+module.exports = "<div class=\"container\">\r\n  <h1>HOME</h1>\r\n  <button class=\"btn btn-primary btn-block\"\r\n          (click)=\"register()\">Register</button>\r\n  <button class=\"btn btn-success btn-block\"\r\n          (click)=\"comedianlogin()\">Comedian Login</button>\r\n  <button class=\"btn btn-success btn-block\"\r\n          (click)=\"criticlogin()\">Critic Login</button>\r\n  <button class=\"btn btn-success btn-block\"\r\n          (click)=\"adminlogin()\">Admin Login</button>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -341,6 +1133,9 @@ var ProjectHomeComponent = (function () {
     };
     ProjectHomeComponent.prototype.criticlogin = function () {
         this.router.navigate(['criticlogin']);
+    };
+    ProjectHomeComponent.prototype.adminlogin = function () {
+        this.router.navigate(['adminlogin']);
     };
     return ProjectHomeComponent;
 }());
@@ -1791,7 +2586,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/critic/review/review-create/review-create.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <!--heading on the nav bar-->\r\n    <p class=\"navbar-header pull-left\">\r\n      <a class=\"navbar-brand thick\">\r\n        <b>Create Review</b>\r\n      </a>\r\n    </p>\r\n\r\n    <!--cross-->\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"reviews()\"  class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-remove\"></span>\r\n      </a>\r\n    </p>\r\n\r\n  </div>\r\n</nav>\r\n\r\n<div class=\"container\">\r\n<form #f=\"ngForm\">\r\n\r\n  <div class=\"form-group\">\r\n    <label for=\"review\">Review URL</label>\r\n    <input type=\"text\"\r\n           class=\"form-control\"\r\n           id=\"review\"\r\n           name=\"review\"\r\n           ngModel\r\n           required\r\n           #review=\"ngModel\" >\r\n    <span class=\"help-block\" *ngIf=\"!review.valid && review.touched\">\r\n        Please enter review url!\r\n        </span>\r\n  </div>\r\n\r\n  <button class=\"btn btn-success btn-block\"\r\n          (click)=\"create()\">Create</button>\r\n\r\n</form>\r\n</div>\r\n\r\n<!-- Footer -->\r\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\r\n  <div class=\"container-fluid\">\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"profile()\" class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-user\"></span>\r\n      </a>\r\n    </p>\r\n  </div>\r\n</nav>\r\n"
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <!--heading on the nav bar-->\r\n    <p class=\"navbar-header pull-left\">\r\n      <a class=\"navbar-brand thick\">\r\n        <b>Create Review</b>\r\n      </a>\r\n    </p>\r\n\r\n    <!--cross-->\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"reviews()\"  class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-remove\"></span>\r\n      </a>\r\n    </p>\r\n\r\n  </div>\r\n</nav>\r\n\r\n<div class=\"container\">\r\n<form #f=\"ngForm\">\r\n\r\n  <div class=\"form-group\">\r\n    <label for=\"review\">Review</label>\r\n    <input type=\"text\"\r\n           class=\"form-control\"\r\n           id=\"review\"\r\n           name=\"review\"\r\n           ngModel\r\n           required\r\n           #review=\"ngModel\" >\r\n    <span class=\"help-block\" *ngIf=\"!review.valid && review.touched\">\r\n        Please enter review!\r\n        </span>\r\n  </div>\r\n\r\n  <div class=\"form-group\">\r\n    <label for=\"username\">Comedian Username</label>\r\n    <input type=\"text\"\r\n           class=\"form-control\"\r\n           id=\"username\"\r\n           name=\"username\"\r\n           ngModel\r\n           required\r\n           #username=\"ngModel\" >\r\n    <span class=\"help-block\" *ngIf=\"!username.valid && username.touched\">\r\n        Please enter comedian username!\r\n        </span>\r\n  </div>\r\n\r\n  <button class=\"btn btn-success btn-block\"\r\n          (click)=\"create()\">Create</button>\r\n\r\n</form>\r\n</div>\r\n\r\n<!-- Footer -->\r\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\r\n  <div class=\"container-fluid\">\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"profile()\" class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-user\"></span>\r\n      </a>\r\n    </p>\r\n  </div>\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -1804,6 +2599,7 @@ module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n  <d
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_review_service_client__ = __webpack_require__("../../../../../src/app/services/review.service.client.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_comedian_service_client__ = __webpack_require__("../../../../../src/app/services/comedian.service.client.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1817,9 +2613,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var ReviewCreateComponent = (function () {
-    function ReviewCreateComponent(reviewService, activatedRoute, router) {
+    function ReviewCreateComponent(reviewService, comedianService, activatedRoute, router) {
         this.reviewService = reviewService;
+        this.comedianService = comedianService;
         this.activatedRoute = activatedRoute;
         this.router = router;
     }
@@ -1833,9 +2631,13 @@ var ReviewCreateComponent = (function () {
     ReviewCreateComponent.prototype.create = function () {
         var _this = this;
         this.url = this.newWebsiteForm.value.review;
-        this.reviewService.createReview(this.criticId, { url: this.url })
-            .subscribe(function (review) {
-            _this.router.navigate(['critic', _this.criticId, 'review']);
+        this.username = this.newWebsiteForm.value.username;
+        this.comedianService.findComedianByUsername(this.username)
+            .subscribe(function (comedian) {
+            _this.reviewService.createReview(_this.criticId, { url: _this.url, portfolio: comedian._id })
+                .subscribe(function (review) {
+                _this.router.navigate(['critic', _this.criticId, 'review']);
+            });
         });
     };
     ReviewCreateComponent.prototype.profile = function () {
@@ -1856,10 +2658,10 @@ ReviewCreateComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/components/critic/review/review-create/review-create.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/critic/review/review-create/review-create.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_review_service_client__["a" /* ReviewService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_review_service_client__["a" /* ReviewService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_review_service_client__["a" /* ReviewService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_review_service_client__["a" /* ReviewService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__services_comedian_service_client__["a" /* ComedianService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_comedian_service_client__["a" /* ComedianService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _e || Object])
 ], ReviewCreateComponent);
 
-var _a, _b, _c, _d;
+var _a, _b, _c, _d, _e;
 //# sourceMappingURL=review-create.component.js.map
 
 /***/ }),
@@ -1885,7 +2687,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/critic/review/review-edit/review-edit.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <!--heading on the nav bar-->\r\n    <p class=\"navbar-header pull-left\">\r\n      <a class=\"navbar-brand thick\">\r\n        <b>Edit Review</b>\r\n      </a>\r\n    </p>\r\n\r\n    <!--cancel-->\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"reviews()\"  class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-remove\"></span>\r\n      </a>\r\n    </p>\r\n\r\n  </div>\r\n</nav>\r\n\r\n<div class=\"container\">\r\n  <form>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"url\">Review URL</label>\r\n      <input [(ngModel)]=\"url\" name=\"url\" type=\"text\" class=\"form-control\" id=\"url\" >\r\n    </div>\r\n\r\n    <button class=\"btn btn-success btn-block\"\r\n            (click)=\"edit()\">Edit</button>\r\n\r\n    <button class=\"btn btn-danger btn-block\"\r\n            (click)=\"deleteReview()\">Delete</button>\r\n\r\n  </form>\r\n</div>\r\n\r\n<!-- Footer -->\r\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\r\n  <div class=\"container-fluid\">\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"profile()\" class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-user\"></span>\r\n      </a>\r\n    </p>\r\n  </div>\r\n</nav>\r\n"
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <!--heading on the nav bar-->\r\n    <p class=\"navbar-header pull-left\">\r\n      <a class=\"navbar-brand thick\">\r\n        <b>Edit Review</b>\r\n      </a>\r\n    </p>\r\n\r\n    <!--cancel-->\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"reviews()\"  class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-remove\"></span>\r\n      </a>\r\n    </p>\r\n\r\n  </div>\r\n</nav>\r\n\r\n<div class=\"container\">\r\n  <form>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"url\">Review</label>\r\n      <input [(ngModel)]=\"url\" name=\"url\" type=\"text\" class=\"form-control\" id=\"url\" >\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"username\">Comedian Username</label>\r\n      <input [(ngModel)]=\"username\" name=\"username\" type=\"text\" class=\"form-control\" id=\"username\" >\r\n    </div>\r\n\r\n    <button class=\"btn btn-success btn-block\"\r\n            (click)=\"edit()\">Edit</button>\r\n\r\n    <button class=\"btn btn-danger btn-block\"\r\n            (click)=\"deleteReview()\">Delete</button>\r\n\r\n  </form>\r\n</div>\r\n\r\n<!-- Footer -->\r\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\r\n  <div class=\"container-fluid\">\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"profile()\" class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-user\"></span>\r\n      </a>\r\n    </p>\r\n  </div>\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -1897,6 +2699,7 @@ module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n  <d
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_review_service_client__ = __webpack_require__("../../../../../src/app/services/review.service.client.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_comedian_service_client__ = __webpack_require__("../../../../../src/app/services/comedian.service.client.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1909,9 +2712,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var ReviewEditComponent = (function () {
-    function ReviewEditComponent(reviewService, activatedRoute, router) {
+    function ReviewEditComponent(reviewService, comedianService, activatedRoute, router) {
         this.reviewService = reviewService;
+        this.comedianService = comedianService;
         this.activatedRoute = activatedRoute;
         this.router = router;
     }
@@ -1925,13 +2730,21 @@ var ReviewEditComponent = (function () {
         this.reviewService.findReviewById(this.reviewId)
             .subscribe(function (review) {
             _this.url = review.url;
+            var comedianId = review.portfolio;
+            _this.comedianService.findComedianById(comedianId)
+                .subscribe(function (comedian) {
+                _this.username = comedian.username;
+            });
         });
     };
     ReviewEditComponent.prototype.edit = function () {
         var _this = this;
-        this.reviewService.updateReview(this.reviewId, { url: this.url })
-            .subscribe(function (review) {
-            _this.router.navigate(['critic', _this.criticId, 'review']);
+        this.comedianService.findComedianByUsername(this.username)
+            .subscribe(function (comedian) {
+            _this.reviewService.updateReview(_this.reviewId, { url: _this.url, portfolio: comedian._id })
+                .subscribe(function (review) {
+                _this.router.navigate(['critic', _this.criticId, 'review']);
+            });
         });
     };
     ReviewEditComponent.prototype.deleteReview = function () {
@@ -1955,10 +2768,10 @@ ReviewEditComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/components/critic/review/review-edit/review-edit.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/critic/review/review-edit/review-edit.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_review_service_client__["a" /* ReviewService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_review_service_client__["a" /* ReviewService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_review_service_client__["a" /* ReviewService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_review_service_client__["a" /* ReviewService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_comedian_service_client__["a" /* ComedianService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_comedian_service_client__["a" /* ComedianService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _d || Object])
 ], ReviewEditComponent);
 
-var _a, _b, _c;
+var _a, _b, _c, _d;
 //# sourceMappingURL=review-edit.component.js.map
 
 /***/ }),
@@ -1984,7 +2797,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/critic/review/review-list/review-list.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <!--heading on the nav bar-->\r\n    <p class=\"navbar-header pull-left\">\r\n      <a class=\"navbar-brand thick\">\r\n        <b>Reviews</b>\r\n      </a>\r\n    </p>\r\n\r\n    <!--create-->\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"create()\"  class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-plus\"></span>\r\n      </a>\r\n    </p>\r\n\r\n  </div>\r\n</nav>\r\n\r\n  <ul class=\"list-group\">\r\n        <li *ngFor=\"let review of reviews\" class=\"list-group-item li-border-true rounded\">\r\n          <a (click)=\"edit(review)\">\r\n            <img [src]=\"review.url | safe\">\r\n          </a>\r\n        </li>\r\n  </ul>\r\n\r\n<!-- Footer -->\r\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\r\n  <div class=\"container-fluid\">\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"profile()\" class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-user\"></span>\r\n      </a>\r\n    </p>\r\n  </div>\r\n</nav>\r\n"
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <!--heading on the nav bar-->\r\n    <p class=\"navbar-header pull-left\">\r\n      <a class=\"navbar-brand thick\">\r\n        <b>Reviews</b>\r\n      </a>\r\n    </p>\r\n\r\n    <!--create-->\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"create()\"  class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-plus\"></span>\r\n      </a>\r\n    </p>\r\n\r\n  </div>\r\n</nav>\r\n\r\n<div class=\"container\">\r\n  <ul class=\"list-group\">\r\n        <li *ngFor=\"let review of reviews\" class=\"list-group-item li-border-true rounded\">\r\n          <div>\r\n            <a (click)=\"edit(review)\">\r\n              <p><i>{{review.url}}</i></p>\r\n            </a>\r\n            <a (click)=\"portfolio(review)\">\r\n              <p><b>#portfolio</b></p>\r\n            </a>\r\n          </div>\r\n        </li>\r\n  </ul>\r\n</div>\r\n\r\n<!-- Footer -->\r\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\r\n  <div class=\"container-fluid\">\r\n    <p class=\"navbar-text pull-right\">\r\n      <a (click)=\"profile()\" class=\"navbar-link\">\r\n        <span class=\"glyphicon glyphicon-user\"></span>\r\n      </a>\r\n    </p>\r\n  </div>\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -2034,6 +2847,11 @@ var ReviewListComponent = (function () {
     };
     ReviewListComponent.prototype.edit = function (review) {
         this.router.navigate(['critic', this.criticId, 'review', review._id]);
+    };
+    ReviewListComponent.prototype.portfolio = function (review) {
+        if (review.portfolio) {
+            this.router.navigate(['comedian', review.portfolio, 'portfolio']);
+        }
     };
     ReviewListComponent.prototype.profile = function () {
         this.router.navigate(['critic', this.criticId]);
@@ -2207,7 +3025,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<div class=\"container\">\r\n\r\n  <h1>\r\n    Angular 4 MEAN stack app\r\n  </h1>\r\n\r\n\r\n  <h3>\r\n    App works\r\n  </h3>\r\n\r\n\r\n  <h4>\r\n    <a [routerLink]=\"['test']\">Test MongoDB</a>\r\n  </h4>\r\n\r\n  <h3>\r\n    <a [routerLink]=\"['home']\">Home</a>\r\n  </h3>\r\n\r\n</div>\r\n\r\n"
+module.exports = "<div data-spy=\"scroll\" data-target=\".navbar\" data-offset=\"50\">\r\n\r\n  <nav class=\"navbar navbar-inverse navbar-fixed-top\">\r\n    <div class=\"container-fluid vessel\">\r\n      <div>\r\n        <div class=\"collapse navbar-collapse\" id=\"myNavbar\">\r\n          <ul class=\"nav navbar-nav\">\r\n            <li><a href=\"#mainpage\">Main Page</a></li>\r\n            <li><a href=\"#aboutproject\">About Project</a></li>\r\n            <li><a href=\"#links\">Links</a></li>\r\n          </ul>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </nav>\r\n\r\n  <div id=\"mainpage\" class=\"container-fluid pointer text-center\">\r\n    <h1>Main Page</h1>\r\n    <img src=\"https://birdgei.files.wordpress.com/2012/02/100.gif\"\r\n         class=\"img-responsive img-circle margin\" style=\"display:inline\" alt=\"Vineet\" width=\"350\" height=\"350\">\r\n  </div>\r\n\r\n  <div id=\"aboutproject\" class=\"container-fluid pointer text-center\">\r\n    <blockquote class=\"blockquote\">\r\n      <i>This is a website for Comedians and their critics.\r\n        It is a one stop destination for Comedians where they can display their material and get it reviewed by critics.\r\n        Using this website Comedians can create a portfolio, to which they can upload videos and images.\r\n        Critics can review the portfolios.</i>\r\n      <footer class=\"blockquote-footer\" style=\"color: white\"><br>Vineet Trivedi.\r\n      </footer>\r\n    </blockquote>\r\n    <img src=\"https://lh4.googleusercontent.com/cCNh5aivEp9o077dEuBBmk_9_k9gUZM7Q3b8BHAmf5INikeFkJI56BFHyTH7z3UCsIBxdCE6tPAf35YZ-5H_=w1366-h662-rw\"\r\n         class=\"img-responsive img-square margin\" style=\"display:inline\" alt=\"Vineet\" width=\"200\" height=\"200\">\r\n  </div>\r\n\r\n  <div id=\"links\" class=\"container-fluid pointer text-center\">\r\n    <h1 class=\"display-1\">Links</h1><br>\r\n    <div class=\"row\">\r\n      <div class=\"col-sm-3\">\r\n        <a href=\"https://webdev-trivedi-vineet.herokuapp.com/\"><b>Assignment Heroku</b></a><br><br><br>\r\n        <img src=\"https://vignette.wikia.nocookie.net/simpsons/images/a/ab/BartSimpson.jpg/revision/latest?cb=20141101133153\"\r\n             class=\"img-responsive margin\" style=\"width:100%\" alt=\"Assignment Heroku\">\r\n      </div>\r\n      <div class=\"col-sm-3\">\r\n        <a href=\"https://github.com/vineettrivedi/webdev-trivedi-vineet\"><b>Assignment GitHub</b></a><br><br><br>\r\n        <img src=\"https://static.simpsonswiki.com/images/thumb/6/65/Bart_Simpson.png/200px-Bart_Simpson.png\"\r\n             class=\"img-responsive margin\" style=\"width:100%\" alt=\"Assignment GitHub\">\r\n      </div>\r\n      <div class=\"col-sm-3\">\r\n        <a [routerLink]=\"['home']\"><b>Project Heroku</b></a><br><br><br>\r\n        <img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSJ1p3kapayVWe2_SlZJF-5Y1vy8p3t8NSApBajQNmtuhSTeP7RQ\"\r\n             class=\"img-responsive margin\" style=\"width:100%\" alt=\"Project Heroku\">\r\n      </div>\r\n      <div class=\"col-sm-3\">\r\n        <a href=\"https://github.com/vineettrivedi/webdev-project\"><b>Project GitHub</b></a><br><br><br>\r\n        <img src=\"https://pre00.deviantart.net/cd15/th/pre/f/2014/262/9/1/bart_simpson___01_by_mighty355-d7zqrbx.png\"\r\n             class=\"img-responsive margin\" style=\"width:100%\" alt=\"Project GitHub\">\r\n      </div>\r\n    </div>\r\n\r\n  </div>\r\n</div>\r\n\r\n  <!--<div class=\"container\">-->\r\n\r\n  <!--<h1>-->\r\n    <!--Angular 4 MEAN stack app-->\r\n  <!--</h1>-->\r\n\r\n\r\n  <!--<h3>-->\r\n    <!--App works-->\r\n  <!--</h3>-->\r\n\r\n\r\n  <!--<h4>-->\r\n    <!--<a [routerLink]=\"['test']\">Test MongoDB</a>-->\r\n  <!--</h4>-->\r\n\r\n  <!--<h3>-->\r\n    <!--<a [routerLink]=\"['home']\">Home</a>-->\r\n  <!--</h3>-->\r\n\r\n<!--</div>-->\r\n\r\n"
 
 /***/ }),
 
@@ -2604,6 +3422,12 @@ var ComedianService = (function () {
             var data = res;
         });
     };
+    ComedianService.prototype.findAllComedians = function () {
+        return this._http.get(this.baseUrl + '/api/comedian/all')
+            .map(function (res) {
+            return res.json();
+        });
+    };
     ComedianService.prototype.createComedian = function (comedian) {
         return this._http.post(this.baseUrl + '/api/comedian', comedian)
             .map(function (res) {
@@ -2635,7 +3459,10 @@ var ComedianService = (function () {
         });
     };
     ComedianService.prototype.deleteComedian = function (comedianId) {
-        this._http.delete(this.baseUrl + '/api/comedian/' + comedianId);
+        return this._http.delete(this.baseUrl + '/api/comedian/' + comedianId)
+            .map(function (res) {
+            return;
+        });
     };
     return ComedianService;
 }());
@@ -2726,6 +3553,12 @@ var CriticService = (function () {
             var data = res;
         });
     };
+    CriticService.prototype.findAllCritics = function () {
+        return this._http.get(this.baseUrl + '/api/critic/all')
+            .map(function (res) {
+            return res.json();
+        });
+    };
     CriticService.prototype.createCritic = function (critic) {
         return this._http.post(this.baseUrl + '/api/critic', critic)
             .map(function (res) {
@@ -2757,7 +3590,10 @@ var CriticService = (function () {
         });
     };
     CriticService.prototype.deleteCritic = function (criticId) {
-        this._http.delete(this.baseUrl + '/api/critic/' + criticId);
+        return this._http.delete(this.baseUrl + '/api/critic/' + criticId)
+            .map(function (res) {
+            return;
+        });
     };
     return CriticService;
 }());
@@ -2799,7 +3635,7 @@ var FlickrService = (function () {
     FlickrService.prototype.searchImage = function (image) {
         var url = 'https://api.flickr.com/' +
             'services/rest/?method=flickr.photos.search&api_key=e223db0dfbe2560648b4d6a33a6b91f9&text='
-            + image + '&format=json&nojsoncallback=1';
+            + image + '&safe_search=1&format=json&nojsoncallback=1';
         return this.http.get(url)
             .map(function (response) {
             return response.json();

@@ -66,6 +66,15 @@ export class CriticService {
       );
   }
 
+  findAllCritics() {
+    return this._http.get(this.baseUrl + '/api/critic/all')
+      .map(
+        (res: Response) => {
+          return res.json();
+        }
+      );
+  }
+
   createCritic(critic: any) {
     return this._http.post(this.baseUrl + '/api/critic', critic)
       .map(
@@ -112,7 +121,12 @@ export class CriticService {
   }
 
   deleteCritic(criticId: string) {
-    this._http.delete(this.baseUrl + '/api/critic/' + criticId);
+    return this._http.delete(this.baseUrl + '/api/critic/' + criticId)
+      .map(
+        (res: Response) => {
+          return;
+        }
+      );
   }
 
 }

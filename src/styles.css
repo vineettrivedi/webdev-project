@@ -93,3 +93,16 @@ a:focus, a:hover {
 
 .column-border {
 }
+
+#mainpage {padding-top:50px;height:500px;background-color: #1abc9c;color: #ffffff;}
+#aboutproject {padding-top:50px;height:500px;background-color: #474e5d;color: #ffffff;}
+#links {padding-top:50px;height:500px;background-color: #ffffff;color: #555555;}
+
+.pointer {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.vessel {
+  padding-top: 30px;
+}

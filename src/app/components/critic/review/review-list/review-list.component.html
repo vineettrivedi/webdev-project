@@ -18,13 +18,20 @@
   </div>
 </nav>
 
+<div class="container">
   <ul class="list-group">
         <li *ngFor="let review of reviews" class="list-group-item li-border-true rounded">
-          <a (click)="edit(review)">
-            <img [src]="review.url | safe">
-          </a>
+          <div>
+            <a (click)="edit(review)">
+              <p><i>{{review.url}}</i></p>
+            </a>
+            <a (click)="portfolio(review)">
+              <p><b>#portfolio</b></p>
+            </a>
+          </div>
         </li>
   </ul>
+</div>
 
 <!-- Footer -->
 <nav class="navbar navbar-default navbar-fixed-bottom">

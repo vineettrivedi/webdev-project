@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {ReviewService} from '../../../../services/review.service.client';
+import {ComedianService} from '../../../../services/comedian.service.client';
 
 @Component({
   selector: 'app-review-edit',
@@ -12,8 +13,9 @@ export class ReviewEditComponent implements OnInit {
   criticId: string;
   reviewId: string;
   url: string;
+  username: string;
 
-  constructor(private reviewService: ReviewService,
+  constructor(private reviewService: ReviewService, private comedianService: ComedianService,
               private activatedRoute: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
@@ -28,14 +30,22 @@ export class ReviewEditComponent implements OnInit {
     this.reviewService.findReviewById(this.reviewId)
       .subscribe((review: any) => {
         this.url = review.url;
+        const comedianId = review.portfolio;
+        this.comedianService.findComedianById(comedianId)
+          .subscribe((comedian) => {
+            this.username = comedian.username;
+          });
       });
 
   }
 
   edit() {
-    this.reviewService.updateReview(this.reviewId, {url: this.url})
-      .subscribe((review: any) => {
-        this.router.navigate(['critic', this.criticId, 'review']);
+    this.comedianService.findComedianByUsername(this.username)
+      .subscribe((comedian) => {
+        this.reviewService.updateReview(this.reviewId, {url: this.url, portfolio: comedian._id})
+          .subscribe((review: any) => {
+            this.router.navigate(['critic', this.criticId, 'review']);
+          });
       });
   }
 

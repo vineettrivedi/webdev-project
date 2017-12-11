@@ -39,6 +39,12 @@ export class ReviewListComponent implements OnInit {
     this.router.navigate(['critic', this.criticId, 'review', review._id]);
   }
 
+  portfolio(review) {
+    if (review.portfolio) {
+      this.router.navigate(['comedian', review.portfolio, 'portfolio']);
+    }
+  }
+
   profile() {
     this.router.navigate(['critic', this.criticId]);
   }
